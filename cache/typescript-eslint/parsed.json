@@ -1,0 +1,83 @@
+{
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+      {
+        "name": "pkg:npm/typescript-eslint@8.70.1",
+        "digest": {
+          "sha512": "01c586eca0e36764c7357b20c2db4c6869b3562d1515194561fa851d84116c3a45de8c2e61bba22fc73b514addda4f2cdcfa127c842b59fac65df70496b58b60"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+      "buildDefinition": {
+        "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+        "externalParameters": {
+          "workflow": {
+            "ref": "refs/heads/main",
+            "repository": "https://github.com/typescript-eslint/typescript-eslint",
+            "path": ".github/workflows/release.yml"
+          }
+        },
+        "internalParameters": {
+          "github": {
+            "event_name": "schedule",
+            "repository_id": "165536154",
+            "repository_owner_id": "46634674"
+          }
+        },
+        "resolvedDependencies": [
+          {
+            "uri": "git+https://github.com/typescript-eslint/typescript-eslint@refs/heads/main",
+            "digest": {
+              "gitCommit": "9d82e4b1d9011da31d62d14387bb5a539853fafa"
+            }
+          }
+        ]
+      },
+      "runDetails": {
+        "builder": {
+          "id": "https://github.com/actions/runner/github-hosted"
+        },
+        "metadata": {
+          "invocationId": "https://github.com/typescript-eslint/typescript-eslint/actions/runs/35629706063/attempts/1"
+        }
+      }
+    }
+  },
+  "signingCertificate": {
+    "subjectAltName": "URI:https://github.com/typescript-eslint/typescript-eslint/.github/workflows/release.yml@refs/heads/main",
+    "issuer": "O=sigstore.dev, CN=sigstore-intermediate",
+    "notBefore": "Sep 21 17:06:58 2026 GMT",
+    "notAfter": "Sep 21 17:16:58 2026 GMT",
+    "fulcioClaims": {
+      "legacyIssuer": "https://token.actions.githubusercontent.com",
+      "legacyTrigger": "schedule",
+      "legacySha": "9d82e4b1d9011da31d62d14387bb5a539853fafa",
+      "legacyWorkflowName": "Release",
+      "legacyRepository": "typescript-eslint/typescript-eslint",
+      "legacyRef": "refs/heads/main",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "buildSignerURI": "https://github.com/typescript-eslint/typescript-eslint/.github/workflows/release.yml@refs/heads/main",
+      "buildSignerDigest": "9d82e4b1d9011da31d62d14387bb5a539853fafa",
+      "runnerEnvironment": "github-hosted",
+      "sourceRepositoryURI": "https://github.com/typescript-eslint/typescript-eslint",
+      "sourceRepositoryDigest": "9d82e4b1d9011da31d62d14387bb5a539853fafa",
+      "sourceRepositoryRef": "refs/heads/main",
+      "sourceRepositoryIdentifier": "165536154",
+      "sourceRepositoryOwnerURI": "https://github.com/typescript-eslint",
+      "sourceRepositoryOwnerIdentifier": "46634674",
+      "buildConfigURI": "https://github.com/typescript-eslint/typescript-eslint/.github/workflows/release.yml@refs/heads/main",
+      "buildConfigDigest": "9d82e4b1d9011da31d62d14387bb5a539853fafa",
+      "buildTrigger": "schedule",
+      "runInvocationURI": "https://github.com/typescript-eslint/typescript-eslint/actions/runs/35629706063/attempts/1",
+      "sourceRepositoryVisibilityAtSigning": "public"
+    }
+  },
+  "tlogEntry": {
+    "logIndex": "2906441293",
+    "integratedTime": "2026-09-21T17:06:58.000Z",
+    "kind": "dsse/0.0.1"
+  }
+}

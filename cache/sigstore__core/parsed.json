@@ -1,0 +1,83 @@
+{
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+      {
+        "name": "pkg:npm/%40sigstore/core@4.0.1",
+        "digest": {
+          "sha512": "f6fe61463ba39f9357abca3b5c511480bc80b5daf9222b1be29cccd39bb72bad484b9ab784fde5b96027764d1190f3cb4d41684db83b55bf38510d5941e6a359"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+      "buildDefinition": {
+        "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+        "externalParameters": {
+          "workflow": {
+            "ref": "refs/heads/main",
+            "repository": "https://github.com/sigstore/sigstore-js",
+            "path": ".github/workflows/release.yml"
+          }
+        },
+        "internalParameters": {
+          "github": {
+            "event_name": "push",
+            "repository_id": "495574555",
+            "repository_owner_id": "71096353"
+          }
+        },
+        "resolvedDependencies": [
+          {
+            "uri": "git+https://github.com/sigstore/sigstore-js@refs/heads/main",
+            "digest": {
+              "gitCommit": "d406ea60b342ca37cdeecd7afedb992cd189db92"
+            }
+          }
+        ]
+      },
+      "runDetails": {
+        "builder": {
+          "id": "https://github.com/actions/runner/github-hosted"
+        },
+        "metadata": {
+          "invocationId": "https://github.com/sigstore/sigstore-js/actions/runs/28204693054/attempts/1"
+        }
+      }
+    }
+  },
+  "signingCertificate": {
+    "subjectAltName": "URI:https://github.com/sigstore/sigstore-js/.github/workflows/release.yml@refs/heads/main",
+    "issuer": "O=sigstore.dev, CN=sigstore-intermediate",
+    "notBefore": "Jun 25 22:33:23 2026 GMT",
+    "notAfter": "Jun 25 22:43:23 2026 GMT",
+    "fulcioClaims": {
+      "legacyIssuer": "https://token.actions.githubusercontent.com",
+      "legacyTrigger": "push",
+      "legacySha": "d406ea60b342ca37cdeecd7afedb992cd189db92",
+      "legacyWorkflowName": "Release",
+      "legacyRepository": "sigstore/sigstore-js",
+      "legacyRef": "refs/heads/main",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "buildSignerURI": "https://github.com/sigstore/sigstore-js/.github/workflows/release.yml@refs/heads/main",
+      "buildSignerDigest": "d406ea60b342ca37cdeecd7afedb992cd189db92",
+      "runnerEnvironment": "github-hosted",
+      "sourceRepositoryURI": "https://github.com/sigstore/sigstore-js",
+      "sourceRepositoryDigest": "d406ea60b342ca37cdeecd7afedb992cd189db92",
+      "sourceRepositoryRef": "refs/heads/main",
+      "sourceRepositoryIdentifier": "495574555",
+      "sourceRepositoryOwnerURI": "https://github.com/sigstore",
+      "sourceRepositoryOwnerIdentifier": "71096353",
+      "buildConfigURI": "https://github.com/sigstore/sigstore-js/.github/workflows/release.yml@refs/heads/main",
+      "buildConfigDigest": "d406ea60b342ca37cdeecd7afedb992cd189db92",
+      "buildTrigger": "push",
+      "runInvocationURI": "https://github.com/sigstore/sigstore-js/actions/runs/28204693054/attempts/1",
+      "sourceRepositoryVisibilityAtSigning": "public"
+    }
+  },
+  "tlogEntry": {
+    "logIndex": "1958882830",
+    "integratedTime": "2026-06-25T22:33:23.000Z",
+    "kind": "dsse/0.0.1"
+  }
+}

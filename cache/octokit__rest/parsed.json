@@ -1,0 +1,83 @@
+{
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+      {
+        "name": "pkg:npm/%40octokit/rest@22.0.1",
+        "digest": {
+          "sha512": "2736e1ce5dc211ec619e2bdbd62434289eece6fbe331672646dab9694b0a98a0eb456eb3debf389e09a214a16fa598e9894ffdfd2e884cf151a67e6cff7b9027"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+      "buildDefinition": {
+        "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+        "externalParameters": {
+          "workflow": {
+            "ref": "refs/heads/main",
+            "repository": "https://github.com/octokit/rest.js",
+            "path": ".github/workflows/release.yml"
+          }
+        },
+        "internalParameters": {
+          "github": {
+            "event_name": "push",
+            "repository_id": "359215305",
+            "repository_owner_id": "3430433"
+          }
+        },
+        "resolvedDependencies": [
+          {
+            "uri": "git+https://github.com/octokit/rest.js@refs/heads/main",
+            "digest": {
+              "gitCommit": "daa3ec945e9f1bb77e7ee14ea80d3e823b6d31ca"
+            }
+          }
+        ]
+      },
+      "runDetails": {
+        "builder": {
+          "id": "https://github.com/actions/runner/github-hosted"
+        },
+        "metadata": {
+          "invocationId": "https://github.com/octokit/rest.js/actions/runs/18985038117/attempts/1"
+        }
+      }
+    }
+  },
+  "signingCertificate": {
+    "subjectAltName": "URI:https://github.com/octokit/rest.js/.github/workflows/release.yml@refs/heads/main",
+    "issuer": "O=sigstore.dev, CN=sigstore-intermediate",
+    "notBefore": "Oct 31 20:59:35 2025 GMT",
+    "notAfter": "Oct 31 21:09:35 2025 GMT",
+    "fulcioClaims": {
+      "legacyIssuer": "https://token.actions.githubusercontent.com",
+      "legacyTrigger": "push",
+      "legacySha": "daa3ec945e9f1bb77e7ee14ea80d3e823b6d31ca",
+      "legacyWorkflowName": "Release",
+      "legacyRepository": "octokit/rest.js",
+      "legacyRef": "refs/heads/main",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "buildSignerURI": "https://github.com/octokit/rest.js/.github/workflows/release.yml@refs/heads/main",
+      "buildSignerDigest": "daa3ec945e9f1bb77e7ee14ea80d3e823b6d31ca",
+      "runnerEnvironment": "github-hosted",
+      "sourceRepositoryURI": "https://github.com/octokit/rest.js",
+      "sourceRepositoryDigest": "daa3ec945e9f1bb77e7ee14ea80d3e823b6d31ca",
+      "sourceRepositoryRef": "refs/heads/main",
+      "sourceRepositoryIdentifier": "359215305",
+      "sourceRepositoryOwnerURI": "https://github.com/octokit",
+      "sourceRepositoryOwnerIdentifier": "3430433",
+      "buildConfigURI": "https://github.com/octokit/rest.js/.github/workflows/release.yml@refs/heads/main",
+      "buildConfigDigest": "daa3ec945e9f1bb77e7ee14ea80d3e823b6d31ca",
+      "buildTrigger": "push",
+      "runInvocationURI": "https://github.com/octokit/rest.js/actions/runs/18985038117/attempts/1",
+      "sourceRepositoryVisibilityAtSigning": "public"
+    }
+  },
+  "tlogEntry": {
+    "logIndex": "659845518",
+    "integratedTime": "2025-10-31T20:59:35.000Z",
+    "kind": "dsse/0.0.1"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "provenance-gap",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Measures what npm provenance attests vs. what a consumer might assume it guarantees",
+  "scripts": {
+    "start": "node src/pipeline.mjs",
+    "test": "node test/negative-controls.mjs"
+  },
+  "dependencies": {
+    "sigstore": "5.0.0"
+  }
+}

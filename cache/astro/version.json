@@ -1,0 +1,261 @@
+{
+  "bin": {
+    "astro": "./bin/astro.mjs"
+  },
+  "bugs": "https://github.com/withastro/astro/issues",
+  "dist": {
+    "shasum": "bb728cf842dd23ea73bfb91c47d206163110afcf",
+    "tarball": "https://registry.npmjs.org/astro/-/astro-7.3.5.tgz",
+    "fileCount": 1371,
+    "integrity": "sha512-1p/ernaq/RuESbM5NMjWzbO6SiebMGrGcYlGjMfBhzzgM+n/X7AUmVyw8BqW2QYCdivpsHwJBcD1fqmlTZjZHg==",
+    "signatures": [
+      {
+        "sig": "MEUCICu1gTCH52VGov9jIFNAZQEm5pLExpUw/3eK4mr+uw93AiEAqP7vxGHINvRPdAD9s1sJiT7Ufroz7UFafU2MlzuBFIA=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "sig": "MEYCIQDEa7hyohd2jv8y8VjLiN+a08BOHjNvrSEMZ6NpGncW9QIhAPDs9ng4DWT1k+k5dql9GsswWW8p9bqWHFok1DM1yPlA",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/astro@7.3.5",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 3048875
+  },
+  "name": "astro",
+  "type": "module",
+  "author": "withastro",
+  "engines": {
+    "npm": ">=9.6.5",
+    "node": ">=22.12.0",
+    "pnpm": ">=7.1.0"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./app": "./dist/core/app/entrypoints/index.js",
+    "./env": "./env.d.ts",
+    "./zod": "./dist/zod.js",
+    "./hono": "./dist/core/hono/index.js",
+    "./debug": "./components/Debug.astro",
+    "./fetch": "./dist/core/fetch/index.js",
+    "./types": "./types.d.ts",
+    "./assets": "./dist/assets/index.js",
+    "./client": "./client.d.ts",
+    "./config": "./dist/config/entrypoint.js",
+    "./errors": "./dist/core/errors/userError.js",
+    "./logger": "./dist/core/logger/public.js",
+    "./loaders": "./dist/content/loaders/index.js",
+    "./toolbar": "./dist/toolbar/index.js",
+    "./app/node": "./dist/core/app/entrypoints/node.js",
+    "./client/*": "./dist/runtime/client/*",
+    "./markdown": "./dist/markdown/index.js",
+    "./astro-jsx": "./astro-jsx.d.ts",
+    "./container": "./dist/container/index.js",
+    "./env/setup": "./dist/env/setup.js",
+    "./runtime/*": "./dist/runtime/*",
+    "./components": "./components/index.ts",
+    "./middleware": "./dist/core/middleware/index.js",
+    "./env/runtime": "./dist/env/runtime.js",
+    "./jsx-runtime": {
+      "types": "./jsx-runtime.d.ts",
+      "default": "./dist/jsx-runtime/index.js"
+    },
+    "./logger/json": "./dist/core/logger/impls/json.js",
+    "./logger/node": "./dist/core/logger/impls/node.js",
+    "./tsconfigs/*": "./tsconfigs/*.json",
+    "./app/manifest": "./dist/core/app/entrypoints/manifest.js",
+    "./assets/utils": "./dist/assets/utils/index.js",
+    "./cache/memory": "./dist/core/cache/memory-provider.js",
+    "./components/*": "./components/*",
+    "./package.json": "./package.json",
+    "./app/entrypoint": "./dist/core/app/entrypoints/virtual/index.js",
+    "./assets/runtime": "./dist/assets/runtime.js",
+    "./content/config": "./dist/content/config.js",
+    "./logger/compose": "./dist/core/logger/impls/compose.js",
+    "./logger/console": "./dist/core/logger/impls/console.js",
+    "./content/runtime": "./dist/content/runtime.js",
+    "./jsx-dev-runtime": {
+      "types": "./jsx-runtime.d.ts",
+      "default": "./dist/jsx-runtime/index.js"
+    },
+    "./compiler-runtime": "./dist/runtime/compiler/index.js",
+    "./tsconfigs/*.json": "./tsconfigs/*",
+    "./assets/endpoint/*": "./dist/assets/endpoint/*.js",
+    "./assets/utils/node": "./dist/assets/utils/node.js",
+    "./virtual-modules/*": "./dist/virtual-modules/*",
+    "./app/entrypoint/dev": "./dist/core/app/entrypoints/virtual/dev.js",
+    "./entrypoints/legacy": "./dist/entrypoints/legacy.js",
+    "./app/entrypoint/prod": "./dist/core/app/entrypoints/virtual/prod.js",
+    "./assets/services/noop": "./dist/assets/services/noop.js",
+    "./cache/provider-utils": "./dist/core/cache/provider-utils.js",
+    "./assets/services/sharp": "./dist/assets/services/sharp.js",
+    "./entrypoints/prerender": "./dist/entrypoints/prerender.js",
+    "./content/runtime-assets": "./dist/content/runtime-assets.js",
+    "./assets/fonts/runtime.js": "./dist/assets/fonts/runtime.js",
+    "./app/fetch/default-handler": "./dist/core/fetch/default-handler.js",
+    "./actions/runtime/entrypoints/*": "./dist/actions/runtime/entrypoints/*",
+    "./assets/utils/inferRemoteSize.js": "./dist/assets/utils/remoteProbe.js"
+  },
+  "funding": {
+    "url": "https://opencollective.com/astrodotbuild",
+    "type": "opencollective"
+  },
+  "imports": {
+    "#astro-internal/ambient-manifest": {
+      "types": "./src/core/manifest/ambient-source.ts",
+      "default": "./dist/core/manifest/ambient-source.js"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro-scripts dev --copy-wasm --prebuild \"src/runtime/server/astro-island.ts\" --prebuild \"src/runtime/client/{idle,load,media,only,visible}.ts\" \"src/**/*.{ts,js}\"",
+    "test": "pnpm run test:unit && pnpm run test:integration && pnpm run test:types",
+    "build": "pnpm run prebuild && astro-scripts build \"src/**/*.{ts,js}\" --copy-wasm && tsc -b && astro-check -- -- --tsconfig ./tsconfig.components.json",
+    "build:ci": "pnpm run prebuild && astro-scripts build \"src/**/*.{ts,js}\" --copy-wasm",
+    "prebuild": "astro-scripts prebuild --to-string \"src/runtime/server/astro-island.ts\" \"src/runtime/client/{idle,load,media,only,visible}.ts\"",
+    "test:cli": "astro-scripts test \"test/**/cli.test.ts\"",
+    "test:e2e": "pnpm test:e2e:chrome && pnpm test:e2e:firefox",
+    "test:unit": "astro-scripts test \"test/units/**/*.test.ts\" --strip-types --teardown ./test/units/teardown.ts",
+    "test:match": "astro-scripts test \"test/**/*.test.ts\" --match",
+    "test:types": "tsc --build test/types/tsconfig.json",
+    "test:e2e:match": "playwright test -g",
+    "test:e2e:chrome": "playwright test",
+    "test:e2e:firefox": "playwright test --config playwright.firefox.config.js",
+    "test:integration": "astro-scripts test \"test/*.test.ts\" --parallel --strip-types"
+  },
+  "_npmUser": {
+    "name": "GitHub Actions",
+    "email": "npm-oidc-no-reply@github.com",
+    "trustedPublisher": {
+      "id": "github",
+      "oidcConfigId": "oidc:32b72701-d0ee-4339-8aa8-b140d735a3e2"
+    }
+  },
+  "homepage": "https://astro.build",
+  "repository": {
+    "url": "git+https://github.com/withastro/astro.git",
+    "type": "git",
+    "directory": "packages/astro"
+  },
+  "description": "Astro is a modern site builder with web best practices, performance, and DX front-of-mind.",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "fredkschott",
+      "email": "fkschott@gmail.com"
+    },
+    {
+      "name": "matthewp",
+      "email": "matthew@matthewphillips.info"
+    }
+  ],
+  "_nodeVersion": "24.15.0",
+  "dependencies": {
+    "zod": "^4.5.4",
+    "clsx": "^2.1.1",
+    "diff": "^9.0.0",
+    "dset": "^3.1.4",
+    "obug": "^3.0.0",
+    "svgo": "^4.1.0",
+    "vite": "^8.0.13",
+    "shiki": "^4.0.2",
+    "cookie": "^2.0.1",
+    "mrmime": "^2.0.1",
+    "verkit": "^0.4.0",
+    "vitefu": "^1.1.2",
+    "ci-info": "^4.4.0",
+    "devalue": "^5.8.1",
+    "esbuild": "^0.28.0",
+    "flattie": "^1.1.1",
+    "fontace": "~0.4.1",
+    "js-yaml": "^4.3.2",
+    "p-limit": "^7.3.0",
+    "p-queue": "^9.1.0",
+    "unifont": "~0.7.5",
+    "magicast": "^0.5.2",
+    "tinyclip": "^1.0.1",
+    "tinyexec": "^1.0.4",
+    "find-proc": "0.2.0",
+    "piccolore": "^0.1.3",
+    "picomatch": "^4.0.4",
+    "smol-toml": "^1.8.0",
+    "ultrahtml": "^1.6.0",
+    "unstorage": "^1.17.5",
+    "aria-query": "^5.3.2",
+    "tinyglobby": "^0.2.15",
+    "am-i-vibing": "^0.4.0",
+    "neotraverse": "^1.0.1",
+    "xxhash-wasm": "^1.1.0",
+    "get-tsconfig": "5.0.0-beta.4",
+    "html-escaper": "3.0.3",
+    "jsonc-parser": "^3.3.1",
+    "magic-string": "^1.0.0",
+    "yargs-parser": "^22.0.0",
+    "@clack/prompts": "^1.1.0",
+    "axobject-query": "^4.1.0",
+    "github-slugger": "^2.0.0",
+    "es-module-lexer": "^2.0.0",
+    "@oslojs/encoding": "^1.1.0",
+    "@astrojs/telemetry": "3.3.3",
+    "@capsizecss/unpack": "^4.0.0",
+    "@astrojs/compiler-rs": "^0.5.0",
+    "common-ancestor-path": "^2.0.0",
+    "http-cache-semantics": "^4.2.0",
+    "package-manager-detector": "^1.6.0",
+    "@astrojs/internal-helpers": "0.11.0",
+    "@astrojs/markdown-satteri": "0.4.2"
+  },
+  "publishConfig": {
+    "provenance": true
+  },
+  "_hasShrinkwrap": false,
+  "devDependencies": {
+    "eol": "^0.10.0",
+    "hono": "^4.12.14",
+    "sass": "^1.98.0",
+    "undici": "^7.22.0",
+    "vitest": "^4.1.11",
+    "cheerio": "1.2.0",
+    "fs-fixture": "^2.13.0",
+    "rehype-toc": "^3.0.2",
+    "typescript": "^6.0.3",
+    "expect-type": "^1.3.0",
+    "rehype-slug": "^6.0.0",
+    "parse-srcset": "^1.0.2",
+    "astro-scripts": "0.0.14",
+    "@astrojs/check": "0.9.10",
+    "@types/js-yaml": "^4.0.9",
+    "node-mocks-http": "^1.17.2",
+    "@playwright/test": "1.58.2",
+    "@types/picomatch": "^4.0.2",
+    "@types/aria-query": "^5.0.4",
+    "remark-code-titles": "^0.1.2",
+    "@types/html-escaper": "3.0.4",
+    "@types/parse-srcset": "^1.0.0",
+    "@types/yargs-parser": "^21.0.3",
+    "@astrojs/markdown-remark": "7.3.1",
+    "rehype-autolink-headings": "^7.1.0",
+    "@types/http-cache-semantics": "^4.2.0"
+  },
+  "peerDependencies": {
+    "@astrojs/markdown-remark": "^7.3.0"
+  },
+  "optionalDependencies": {
+    "sharp": "^0.35.4"
+  },
+  "peerDependenciesMeta": {
+    "@astrojs/markdown-remark": {
+      "optional": true
+    }
+  },
+  "_npmOperationalInternal": {
+    "tmp": "tmp/astro_7.3.5_1790241347652_0.9980308532722433",
+    "host": "s3://npm-registry-packages-npm-production"
+  },
+  "_id": "astro@7.3.5",
+  "version": "7.3.5"
+}

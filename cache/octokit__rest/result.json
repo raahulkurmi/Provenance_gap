@@ -1,0 +1,48 @@
+{
+  "name": "@octokit/rest",
+  "version": "22.0.1",
+  "provenancePresent": true,
+  "verified": true,
+  "verifyErrors": [],
+  "attested": {
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+    "sourceRepo": "https://github.com/octokit/rest.js",
+    "workflowPath": ".github/workflows/release.yml",
+    "ref": "refs/heads/main",
+    "commit": "daa3ec945e9f1bb77e7ee14ea80d3e823b6d31ca",
+    "event": "push",
+    "builderId": "https://github.com/actions/runner/github-hosted",
+    "invocationId": "https://github.com/octokit/rest.js/actions/runs/18985038117/attempts/1",
+    "runnerEnvironment": "github-hosted",
+    "repoVisibility": "public",
+    "oidcIssuer": "https://token.actions.githubusercontent.com",
+    "signerIdentity": "URI:https://github.com/octokit/rest.js/.github/workflows/release.yml@refs/heads/main",
+    "signerWorkflow": "https://github.com/octokit/rest.js/.github/workflows/release.yml@refs/heads/main",
+    "signerIsReusable": false
+  },
+  "tlog": {
+    "logIndex": "659845518",
+    "integratedTime": "2025-10-31T20:59:35.000Z",
+    "kind": "dsse/0.0.1"
+  },
+  "publishAttestation": "verified",
+  "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+  "subjectDigestMatches": true,
+  "absentAuthzFacts": [
+    "branch/tag protection or ruleset state at build time",
+    "identity of the actor who triggered the run",
+    "human approval / environment reviewer sign-off",
+    "review status of the commit or workflow file",
+    "integrity of build inputs outside the commit (caches, actions)"
+  ],
+  "failureKinds": [],
+  "tier": "attests-origin-only",
+  "reasons": [
+    "ref refs/heads/main is a branch; provenance does not record whether it was protected, so it cannot be confirmed as a protected context"
+  ],
+  "spec": "@octokit/rest",
+  "pinned": false,
+  "cacheDir": "cache/octokit__rest",
+  "npmAudit": "no errors"
+}

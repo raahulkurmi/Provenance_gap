@@ -1,0 +1,48 @@
+{
+  "name": "hono",
+  "version": "4.13.9",
+  "provenancePresent": true,
+  "verified": true,
+  "verifyErrors": [],
+  "attested": {
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+    "sourceRepo": "https://github.com/honojs/hono",
+    "workflowPath": ".github/workflows/release.yml",
+    "ref": "refs/tags/v4.13.9",
+    "commit": "7c3b0df96dbf3e767968ff5afe4c0d999257b8ee",
+    "event": "push",
+    "builderId": "https://github.com/actions/runner/github-hosted",
+    "invocationId": "https://github.com/honojs/hono/actions/runs/35943087026/attempts/1",
+    "runnerEnvironment": "github-hosted",
+    "repoVisibility": "public",
+    "oidcIssuer": "https://token.actions.githubusercontent.com",
+    "signerIdentity": "URI:https://github.com/honojs/hono/.github/workflows/release.yml@refs/tags/v4.13.9",
+    "signerWorkflow": "https://github.com/honojs/hono/.github/workflows/release.yml@refs/tags/v4.13.9",
+    "signerIsReusable": false
+  },
+  "tlog": {
+    "logIndex": "2928988699",
+    "integratedTime": "2026-09-24T01:29:08.000Z",
+    "kind": "dsse/0.0.1"
+  },
+  "publishAttestation": "verified",
+  "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+  "subjectDigestMatches": true,
+  "absentAuthzFacts": [
+    "branch/tag protection or ruleset state at build time",
+    "identity of the actor who triggered the run",
+    "human approval / environment reviewer sign-off",
+    "review status of the commit or workflow file",
+    "integrity of build inputs outside the commit (caches, actions)"
+  ],
+  "failureKinds": [],
+  "tier": "attests-with-context",
+  "reasons": [
+    "ref refs/tags/v4.13.9 with trigger \"push\" indicates a tagged-release run; tag protection and who created the tag are still not attested"
+  ],
+  "spec": "hono",
+  "pinned": false,
+  "cacheDir": "cache/hono",
+  "npmAudit": "no errors"
+}

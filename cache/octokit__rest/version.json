@@ -1,0 +1,122 @@
+{
+  "bugs": {
+    "url": "https://github.com/octokit/rest.js/issues"
+  },
+  "dist": {
+    "shasum": "4d866c32b76b711d3f736f91992e2b534163b416",
+    "tarball": "https://registry.npmjs.org/@octokit/rest/-/rest-22.0.1.tgz",
+    "fileCount": 9,
+    "integrity": "sha512-Jzbhzl3CEexhnivb1iQ0KJ7s5vvjMWcmRtq5aUsKmKDrRW6z3r84ngmiFKFvpZjpiU/9/S6ITPFRpn5s/3uQJw==",
+    "signatures": [
+      {
+        "sig": "MEUCIHnIVDxUYKE+Tr3tNCqdracD7xBiGhGsRKBrNKD9TpJsAiEAgb0Ij5/cmAg0NMFOBL+fkfpClJXUH3gWi1b9y3+OMdc=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@octokit%2frest@22.0.1",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 8276
+  },
+  "name": "@octokit/rest",
+  "type": "module",
+  "types": "dist-types/index.d.ts",
+  "author": {
+    "url": "https://github.com/gr2m",
+    "name": "Gregor Martynus"
+  },
+  "engines": {
+    "node": ">= 20"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist-types/index.d.ts",
+      "import": "./dist-src/index.js",
+      "default": "./dist-src/index.js"
+    }
+  },
+  "gitHead": "daa3ec945e9f1bb77e7ee14ea80d3e823b6d31ca",
+  "license": "MIT",
+  "_npmUser": {
+    "name": "octokitbot",
+    "email": "security+octokitbot@github.com"
+  },
+  "homepage": "https://github.com/octokit/rest.js#readme",
+  "keywords": [
+    "octokit",
+    "github",
+    "rest",
+    "api-client"
+  ],
+  "repository": {
+    "url": "git+https://github.com/octokit/rest.js.git",
+    "type": "git"
+  },
+  "_npmVersion": "11.6.2",
+  "description": "GitHub REST API client for Node.js",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "octokitbot",
+      "email": "security+octokitbot@github.com"
+    }
+  ],
+  "sideEffects": false,
+  "_nodeVersion": "24.11.0",
+  "contributors": [
+    {
+      "name": "Mike de Boer",
+      "email": "info@mikedeboer.nl"
+    },
+    {
+      "name": "Fabian Jakobs",
+      "email": "fabian@c9.io"
+    },
+    {
+      "name": "Joe Gallo",
+      "email": "joe@brassafrax.com"
+    },
+    {
+      "url": "https://github.com/gr2m",
+      "name": "Gregor Martynus"
+    }
+  ],
+  "dependencies": {
+    "@octokit/core": "^7.0.6",
+    "@octokit/plugin-request-log": "^6.0.0",
+    "@octokit/plugin-paginate-rest": "^14.0.0",
+    "@octokit/plugin-rest-endpoint-methods": "^17.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "_hasShrinkwrap": false,
+  "devDependencies": {
+    "glob": "^11.0.0",
+    "nock": "^14.0.0-beta.8",
+    "undici": "^7.0.0",
+    "vitest": "^4.0.0",
+    "esbuild": "^0.25.0",
+    "prettier": "^3.2.4",
+    "fetch-mock": "^12.0.0",
+    "typescript": "^5.3.3",
+    "@types/node": "^24.0.0",
+    "@octokit/request": "^10.0.6",
+    "@octokit/auth-app": "^8.1.2",
+    "@octokit/tsconfig": "^4.0.0",
+    "@vitest/coverage-v8": "^4.0.0",
+    "@octokit/auth-action": "^6.0.2",
+    "@octokit/fixtures-server": "^8.1.0",
+    "semantic-release-plugin-update-version-in-files": "^2.0.0"
+  },
+  "_npmOperationalInternal": {
+    "tmp": "tmp/rest_22.0.1_1761944376303_0.34438664325096013",
+    "host": "s3://npm-registry-packages-npm-production"
+  },
+  "_id": "@octokit/rest@22.0.1",
+  "version": "22.0.1"
+}

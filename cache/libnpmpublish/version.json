@@ -1,0 +1,123 @@
+{
+  "tap": {
+    "nyc-arg": [
+      "--exclude",
+      "tap-snapshots/**"
+    ],
+    "node-arg": [
+      "--require",
+      "../../scripts/disable-agent-for-tests.js"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/npm/cli/issues"
+  },
+  "dist": {
+    "shasum": "8f8dd2b835f52694108e88e626980b24a963f194",
+    "tarball": "https://registry.npmjs.org/libnpmpublish/-/libnpmpublish-12.0.1.tgz",
+    "fileCount": 7,
+    "integrity": "sha512-gG32Hgikbb8mx+c+b2MKseuQcwKbiIl7wM4a5+scxuRtu/Q7L/fbywMyLD4naUfL0yexdKWzfi6kglMz6BGOWQ==",
+    "signatures": [
+      {
+        "sig": "MEUCIAgwT9l7+RRPx7Dtzp8lhe6DXvywBTV14SQ+5j03cPllAiEA6gBNISJbbnv/4GK65DX7S8oa05bUmdzKAyCIVPxQehE=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "sig": "MEYCIQD84yKf9HQ6/z4te1xyTim23cGxIaUHU0203A5atS7krQIhANbkmZwUnqtX4wotmIXx0BVQIFRJF+aghYAKZ2lSPaci",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "unpackedSize": 29156
+  },
+  "main": "lib/index.js",
+  "name": "libnpmpublish",
+  "author": {
+    "name": "GitHub Inc."
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "gitHead": "e60c978d6768c508f678fb0f258bf84b0693bc8c",
+  "license": "ISC",
+  "scripts": {
+    "lint": "npm run eslint",
+    "snap": "tap",
+    "test": "tap",
+    "eslint": "eslint \"**/*.{js,cjs,ts,mjs,jsx,tsx}\"",
+    "lintfix": "npm run eslint -- --fix",
+    "postlint": "template-oss-check",
+    "posttest": "npm run lint",
+    "template-oss-apply": "template-oss-apply --force"
+  },
+  "_npmUser": {
+    "name": "reggi",
+    "email": "reggi@github.com"
+  },
+  "homepage": "https://npmjs.com/package/libnpmpublish",
+  "repository": {
+    "url": "git+https://github.com/npm/cli.git",
+    "type": "git",
+    "directory": "workspaces/libnpmpublish"
+  },
+  "_npmVersion": "12.1.0",
+  "description": "Programmatic API for the bits behind npm publish and unpublish",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "saquibkhan",
+      "email": "saquibkhan@github.com"
+    },
+    {
+      "name": "npm-cli-ops",
+      "email": "npm-cli+bot@github.com"
+    },
+    {
+      "name": "reggi",
+      "email": "reggi@github.com"
+    },
+    {
+      "name": "martinrrm",
+      "email": "martin.ruiz.mares@gmail.com"
+    }
+  ],
+  "templateOSS": {
+    "content": "../../scripts/template-oss/index.js",
+    "version": "5.1.1",
+    "//@npmcli/template-oss": "This file is partially managed by @npmcli/template-oss. Edits may be overwritten."
+  },
+  "_nodeVersion": "26.0.0",
+  "contributors": [
+    {
+      "name": "Kat Marchán",
+      "email": "kzm@zkat.tech"
+    },
+    {
+      "name": "Claudia Hernández",
+      "email": "claudia@npmjs.com"
+    }
+  ],
+  "dependencies": {
+    "ssri": "^14.0.0",
+    "semver": "^7.3.7",
+    "ci-info": "^4.0.0",
+    "proc-log": "^7.0.0",
+    "sigstore": "^5.0.0",
+    "npm-package-arg": "^14.0.0",
+    "npm-registry-fetch": "^20.0.1",
+    "@npmcli/package-json": "^8.0.0"
+  },
+  "_hasShrinkwrap": false,
+  "devDependencies": {
+    "tap": "^16.3.8",
+    "@npmcli/mock-globals": "^1.0.0",
+    "@npmcli/template-oss": "5.1.1",
+    "@npmcli/eslint-config": "^5.0.1",
+    "@npmcli/mock-registry": "^1.0.0"
+  },
+  "_npmOperationalInternal": {
+    "tmp": "tmp/libnpmpublish_12.0.1_1790096687207_0.6572940029457253",
+    "host": "s3://npm-registry-packages-npm-production"
+  },
+  "_id": "libnpmpublish@12.0.1",
+  "version": "12.0.1"
+}

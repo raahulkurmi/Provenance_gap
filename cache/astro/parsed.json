@@ -1,0 +1,83 @@
+{
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+      {
+        "name": "pkg:npm/astro@7.3.5",
+        "digest": {
+          "sha512": "d69fdeae76aafd1b8449b33934c8d6cdb3ba4a279b306ac67189468cc7c1873ce033e9ff5fb014995cb0f01a96d90602762be9b07c0905c0f57ea9a54d98d91e"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+      "buildDefinition": {
+        "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+        "externalParameters": {
+          "workflow": {
+            "ref": "refs/heads/main",
+            "repository": "https://github.com/withastro/astro",
+            "path": ".github/workflows/release.yml"
+          }
+        },
+        "internalParameters": {
+          "github": {
+            "event_name": "push",
+            "repository_id": "348060227",
+            "repository_owner_id": "44914786"
+          }
+        },
+        "resolvedDependencies": [
+          {
+            "uri": "git+https://github.com/withastro/astro@refs/heads/main",
+            "digest": {
+              "gitCommit": "c2e01642af5f3919e4951b277a01d2de0ba1322f"
+            }
+          }
+        ]
+      },
+      "runDetails": {
+        "builder": {
+          "id": "https://github.com/actions/runner/github-hosted"
+        },
+        "metadata": {
+          "invocationId": "https://github.com/withastro/astro/actions/runs/35979400090/attempts/1"
+        }
+      }
+    }
+  },
+  "signingCertificate": {
+    "subjectAltName": "URI:https://github.com/withastro/astro/.github/workflows/release.yml@refs/heads/main",
+    "issuer": "O=sigstore.dev, CN=sigstore-intermediate",
+    "notBefore": "Sep 24 09:10:34 2026 GMT",
+    "notAfter": "Sep 24 09:20:34 2026 GMT",
+    "fulcioClaims": {
+      "legacyIssuer": "https://token.actions.githubusercontent.com",
+      "legacyTrigger": "push",
+      "legacySha": "c2e01642af5f3919e4951b277a01d2de0ba1322f",
+      "legacyWorkflowName": "Release",
+      "legacyRepository": "withastro/astro",
+      "legacyRef": "refs/heads/main",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "buildSignerURI": "https://github.com/withastro/astro/.github/workflows/release.yml@refs/heads/main",
+      "buildSignerDigest": "c2e01642af5f3919e4951b277a01d2de0ba1322f",
+      "runnerEnvironment": "github-hosted",
+      "sourceRepositoryURI": "https://github.com/withastro/astro",
+      "sourceRepositoryDigest": "c2e01642af5f3919e4951b277a01d2de0ba1322f",
+      "sourceRepositoryRef": "refs/heads/main",
+      "sourceRepositoryIdentifier": "348060227",
+      "sourceRepositoryOwnerURI": "https://github.com/withastro",
+      "sourceRepositoryOwnerIdentifier": "44914786",
+      "buildConfigURI": "https://github.com/withastro/astro/.github/workflows/release.yml@refs/heads/main",
+      "buildConfigDigest": "c2e01642af5f3919e4951b277a01d2de0ba1322f",
+      "buildTrigger": "push",
+      "runInvocationURI": "https://github.com/withastro/astro/actions/runs/35979400090/attempts/1",
+      "sourceRepositoryVisibilityAtSigning": "public"
+    }
+  },
+  "tlogEntry": {
+    "logIndex": "2935391956",
+    "integratedTime": "2026-09-24T09:10:34.000Z",
+    "kind": "dsse/0.0.1"
+  }
+}

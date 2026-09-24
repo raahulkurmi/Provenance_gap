@@ -1,0 +1,2 @@
+spec,name,version,provenancePresent,verified,predicateType,buildType,sourceRepo,workflowPath,signerWorkflow,ref,commit,event,builderId,runnerEnvironment,invocationId,rekorLogIndex,publishAttestation,npmAudit,tier,failureKinds,reasons
+libnpmpublish,libnpmpublish,12.0.1,false,false,,,,,,,,,,,,,absent,no errors,none,,registry manifest has no dist.attestations: no provenance was published for this version

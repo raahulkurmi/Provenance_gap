@@ -1,0 +1,42 @@
+# One entry per line: `name` (latest version) or `name@version` (pinned).
+# Lines starting with # are ignored. Add more below to scale up.
+
+# --- original pilot set (sigstore-js / tuf-js / npm maintainers) ---
+sigstore
+@sigstore/bundle
+@sigstore/sign
+@sigstore/verify
+@sigstore/tuf
+@sigstore/core
+tuf-js
+@tufjs/models
+semver
+pacote
+
+# --- unrelated maintainers, published from a branch ---
+vite
+astro
+@tanstack/react-query
+@octokit/rest
+zod                      # workflow_dispatch trigger
+react                    # workflow_dispatch trigger
+typescript-eslint        # schedule trigger
+@prisma/client           # non-main branch (refs/heads/v7), workflow_dispatch
+
+# --- tag-published (exercises attests-with-context) ---
+pnpm
+vue
+tinyglobby               # release trigger
+@playwright/test         # release trigger
+hono
+tinybench
+
+# --- latest version publishes no provenance (exercises none) ---
+@npmcli/arborist
+libnpmpublish
+chalk
+express
+
+# --- pinned 2023 versions in the older SLSA v0.2 format (parser robustness) ---
+sigstore@1.5.0
+@sigstore/protobuf-specs@0.1.0   # v0.2 and tag-published

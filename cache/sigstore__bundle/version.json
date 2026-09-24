@@ -1,0 +1,76 @@
+{
+  "bugs": {
+    "url": "https://github.com/sigstore/sigstore-js/issues"
+  },
+  "dist": {
+    "shasum": "b4f63156c60e4007d1d2767a764bca3410d6d952",
+    "tarball": "https://registry.npmjs.org/@sigstore/bundle/-/bundle-5.0.0.tgz",
+    "fileCount": 17,
+    "integrity": "sha512-wefjygudENbzbQMks1t5u34EP0fFoD0XvaEP7DOUP/sXKvogzEJYFw5E6pegGyp3onGWzVEYKVa3bNZWyTYX+A==",
+    "signatures": [
+      {
+        "sig": "MEUCIAWu/93NcUIsto5l/2ghybK0m09Ez9cLvBgEbs19NGb1AiEA4DmdawA63Qja7ieW8mEjxrFNcLR33KLrUQfcc8fUmts=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fbundle@5.0.0",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 40495
+  },
+  "main": "dist/index.js",
+  "name": "@sigstore/bundle",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "bdehamer@github.com"
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "gitHead": "7d2900eca1c22b3f87c13987c8d4b7c9a29b733a",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc --build",
+    "clean": "shx rm -rf dist *.tsbuildinfo"
+  },
+  "_npmUser": {
+    "name": "GitHub Actions",
+    "email": "npm-oidc-no-reply@github.com",
+    "trustedPublisher": {
+      "id": "github",
+      "oidcConfigId": "oidc:87d8bb4c-c894-403c-af7e-0d34d7e7327a"
+    }
+  },
+  "homepage": "https://github.com/sigstore/sigstore-js/tree/main/packages/bundle#readme",
+  "repository": {
+    "url": "git+https://github.com/sigstore/sigstore-js.git",
+    "type": "git"
+  },
+  "_npmVersion": "11.13.0",
+  "description": "Sigstore bundle type",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "bdehamer",
+      "email": "brian@dehamer.com"
+    }
+  ],
+  "_nodeVersion": "24.16.0",
+  "dependencies": {
+    "@sigstore/protobuf-specs": "^0.5.0"
+  },
+  "publishConfig": {
+    "provenance": true
+  },
+  "_hasShrinkwrap": false,
+  "_npmOperationalInternal": {
+    "tmp": "tmp/bundle_5.0.0_1780347772154_0.9275423460388017",
+    "host": "s3://npm-registry-packages-npm-production"
+  },
+  "_id": "@sigstore/bundle@5.0.0",
+  "version": "5.0.0"
+}

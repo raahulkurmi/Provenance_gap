@@ -1,0 +1,20 @@
+{
+  "name": "chalk",
+  "version": "6.0.0",
+  "provenancePresent": false,
+  "verified": false,
+  "verifyErrors": [],
+  "attested": {},
+  "tlog": null,
+  "publishAttestation": "absent",
+  "noneReason": "registry manifest has no dist.attestations: no provenance was published for this version",
+  "failureKinds": [],
+  "tier": "none",
+  "reasons": [
+    "registry manifest has no dist.attestations: no provenance was published for this version"
+  ],
+  "spec": "chalk",
+  "pinned": false,
+  "cacheDir": "cache/chalk",
+  "npmAudit": "no errors"
+}

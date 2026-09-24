@@ -1,0 +1,49 @@
+{
+  "name": "typescript-eslint",
+  "version": "8.70.1",
+  "provenancePresent": true,
+  "verified": true,
+  "verifyErrors": [],
+  "attested": {
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+    "sourceRepo": "https://github.com/typescript-eslint/typescript-eslint",
+    "workflowPath": ".github/workflows/release.yml",
+    "ref": "refs/heads/main",
+    "commit": "9d82e4b1d9011da31d62d14387bb5a539853fafa",
+    "event": "schedule",
+    "builderId": "https://github.com/actions/runner/github-hosted",
+    "invocationId": "https://github.com/typescript-eslint/typescript-eslint/actions/runs/35629706063/attempts/1",
+    "runnerEnvironment": "github-hosted",
+    "repoVisibility": "public",
+    "oidcIssuer": "https://token.actions.githubusercontent.com",
+    "signerIdentity": "URI:https://github.com/typescript-eslint/typescript-eslint/.github/workflows/release.yml@refs/heads/main",
+    "signerWorkflow": "https://github.com/typescript-eslint/typescript-eslint/.github/workflows/release.yml@refs/heads/main",
+    "signerIsReusable": false
+  },
+  "tlog": {
+    "logIndex": "2906441293",
+    "integratedTime": "2026-09-21T17:06:58.000Z",
+    "kind": "dsse/0.0.1"
+  },
+  "publishAttestation": "verified",
+  "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+  "subjectDigestMatches": true,
+  "absentAuthzFacts": [
+    "branch/tag protection or ruleset state at build time",
+    "identity of the actor who triggered the run",
+    "human approval / environment reviewer sign-off",
+    "review status of the commit or workflow file",
+    "integrity of build inputs outside the commit (caches, actions)"
+  ],
+  "failureKinds": [],
+  "tier": "attests-origin-only",
+  "reasons": [
+    "ref refs/heads/main is a branch; provenance does not record whether it was protected, so it cannot be confirmed as a protected context",
+    "trigger \"schedule\" is a cron run with no human trigger; whatever was on the branch at that moment was published"
+  ],
+  "spec": "typescript-eslint",
+  "pinned": false,
+  "cacheDir": "cache/typescript-eslint",
+  "npmAudit": "no errors"
+}

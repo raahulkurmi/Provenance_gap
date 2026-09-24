@@ -1,0 +1,83 @@
+{
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+      {
+        "name": "pkg:npm/tuf-js@6.0.0",
+        "digest": {
+          "sha512": "ce52553883baf219a0a35fff5f810d11c4c67ee39302d0cf8bc3ec4ec1be172c43f3913fc30d599f005b5a8ff20841311a923e2a2960ed9dea09d1d7d81a094d"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+      "buildDefinition": {
+        "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+        "externalParameters": {
+          "workflow": {
+            "ref": "refs/heads/main",
+            "repository": "https://github.com/theupdateframework/tuf-js",
+            "path": ".github/workflows/release.yml"
+          }
+        },
+        "internalParameters": {
+          "github": {
+            "event_name": "push",
+            "repository_id": "529431007",
+            "repository_owner_id": "4633028"
+          }
+        },
+        "resolvedDependencies": [
+          {
+            "uri": "git+https://github.com/theupdateframework/tuf-js@refs/heads/main",
+            "digest": {
+              "gitCommit": "c30653d07f0c41fbe5a2030d25eca6fd04f8547f"
+            }
+          }
+        ]
+      },
+      "runDetails": {
+        "builder": {
+          "id": "https://github.com/actions/runner/github-hosted"
+        },
+        "metadata": {
+          "invocationId": "https://github.com/theupdateframework/tuf-js/actions/runs/26779499636/attempts/1"
+        }
+      }
+    }
+  },
+  "signingCertificate": {
+    "subjectAltName": "URI:https://github.com/theupdateframework/tuf-js/.github/workflows/release.yml@refs/heads/main",
+    "issuer": "O=sigstore.dev, CN=sigstore-intermediate",
+    "notBefore": "Jun  1 20:17:29 2026 GMT",
+    "notAfter": "Jun  1 20:27:29 2026 GMT",
+    "fulcioClaims": {
+      "legacyIssuer": "https://token.actions.githubusercontent.com",
+      "legacyTrigger": "push",
+      "legacySha": "c30653d07f0c41fbe5a2030d25eca6fd04f8547f",
+      "legacyWorkflowName": "Release",
+      "legacyRepository": "theupdateframework/tuf-js",
+      "legacyRef": "refs/heads/main",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "buildSignerURI": "https://github.com/theupdateframework/tuf-js/.github/workflows/release.yml@refs/heads/main",
+      "buildSignerDigest": "c30653d07f0c41fbe5a2030d25eca6fd04f8547f",
+      "runnerEnvironment": "github-hosted",
+      "sourceRepositoryURI": "https://github.com/theupdateframework/tuf-js",
+      "sourceRepositoryDigest": "c30653d07f0c41fbe5a2030d25eca6fd04f8547f",
+      "sourceRepositoryRef": "refs/heads/main",
+      "sourceRepositoryIdentifier": "529431007",
+      "sourceRepositoryOwnerURI": "https://github.com/theupdateframework",
+      "sourceRepositoryOwnerIdentifier": "4633028",
+      "buildConfigURI": "https://github.com/theupdateframework/tuf-js/.github/workflows/release.yml@refs/heads/main",
+      "buildConfigDigest": "c30653d07f0c41fbe5a2030d25eca6fd04f8547f",
+      "buildTrigger": "push",
+      "runInvocationURI": "https://github.com/theupdateframework/tuf-js/actions/runs/26779499636/attempts/1",
+      "sourceRepositoryVisibilityAtSigning": "public"
+    }
+  },
+  "tlogEntry": {
+    "logIndex": "1696530300",
+    "integratedTime": "2026-06-01T20:17:29.000Z",
+    "kind": "dsse/0.0.1"
+  }
+}

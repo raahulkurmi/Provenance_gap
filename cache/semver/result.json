@@ -1,0 +1,48 @@
+{
+  "name": "semver",
+  "version": "7.8.5",
+  "provenancePresent": true,
+  "verified": true,
+  "verifyErrors": [],
+  "attested": {
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+    "sourceRepo": "https://github.com/npm/node-semver",
+    "workflowPath": ".github/workflows/release.yml",
+    "ref": "refs/heads/main",
+    "commit": "6e05b7637396ac66522cff8731f07cfe0ef49a29",
+    "event": "push",
+    "builderId": "https://github.com/actions/runner/github-hosted",
+    "invocationId": "https://github.com/npm/node-semver/actions/runs/27842314701/attempts/1",
+    "runnerEnvironment": "github-hosted",
+    "repoVisibility": "public",
+    "oidcIssuer": "https://token.actions.githubusercontent.com",
+    "signerIdentity": "URI:https://github.com/npm/node-semver/.github/workflows/release-integration.yml@refs/heads/main",
+    "signerWorkflow": "https://github.com/npm/node-semver/.github/workflows/release-integration.yml@refs/heads/main",
+    "signerIsReusable": true
+  },
+  "tlog": {
+    "logIndex": "1873023517",
+    "integratedTime": "2026-06-19T18:32:47.000Z",
+    "kind": "dsse/0.0.1"
+  },
+  "publishAttestation": "verified",
+  "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+  "subjectDigestMatches": true,
+  "absentAuthzFacts": [
+    "branch/tag protection or ruleset state at build time",
+    "identity of the actor who triggered the run",
+    "human approval / environment reviewer sign-off",
+    "review status of the commit or workflow file",
+    "integrity of build inputs outside the commit (caches, actions)"
+  ],
+  "failureKinds": [],
+  "tier": "attests-origin-only",
+  "reasons": [
+    "ref refs/heads/main is a branch; provenance does not record whether it was protected, so it cannot be confirmed as a protected context"
+  ],
+  "spec": "semver",
+  "pinned": false,
+  "cacheDir": "cache/semver",
+  "npmAudit": "no errors"
+}

@@ -1,0 +1,89 @@
+{
+  "bugs": {
+    "url": "https://github.com/theupdateframework/tuf-js/issues"
+  },
+  "dist": {
+    "shasum": "2637f81f31a78582643ea50435e523de34cccb78",
+    "tarball": "https://registry.npmjs.org/tuf-js/-/tuf-js-6.0.0.tgz",
+    "fileCount": 19,
+    "integrity": "sha512-zlJVOIO68hmgo1//X4ENEcTGfuOTAtDPi8PsTsG+FyxD85E/ww1ZnwBbWo/yCEExGpI+Kilg7Z3qCdHX2BoJTQ==",
+    "signatures": [
+      {
+        "sig": "MEUCIQC1KVrincvcARLYhZpzoBfFYwoPcBSZw5KP48PVh8tMnAIgQbdT4xltIz3FDxq8QdoqIzFOkn7qyBwuGENwxQKI+30=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/tuf-js@6.0.0",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 44264
+  },
+  "main": "dist/index.js",
+  "name": "tuf-js",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "bdehamer@github.com"
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "gitHead": "c30653d07f0c41fbe5a2030d25eca6fd04f8547f",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc --build tsconfig.build.json",
+    "clean": "rm -rf dist && rm tsconfig.build.tsbuildinfo"
+  },
+  "_npmUser": {
+    "name": "GitHub Actions",
+    "email": "npm-oidc-no-reply@github.com",
+    "trustedPublisher": {
+      "id": "github",
+      "oidcConfigId": "oidc:66c23ee7-8391-40a4-bf78-ad32bcd1163b"
+    }
+  },
+  "homepage": "https://github.com/theupdateframework/tuf-js/tree/main/packages/client#readme",
+  "keywords": [
+    "tuf",
+    "security",
+    "update"
+  ],
+  "repository": {
+    "url": "git+https://github.com/theupdateframework/tuf-js.git",
+    "type": "git"
+  },
+  "_npmVersion": "11.13.0",
+  "description": "JavaScript implementation of The Update Framework (TUF)",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "bdehamer",
+      "email": "brian@dehamer.com"
+    },
+    {
+      "name": "eugenethehub",
+      "email": "ejahngithub@github.com"
+    }
+  ],
+  "_nodeVersion": "24.16.0",
+  "dependencies": {
+    "debug": "^4.4.3",
+    "@tufjs/models": "5.0.0",
+    "@gar/promise-retry": "^1.0.3"
+  },
+  "_hasShrinkwrap": false,
+  "devDependencies": {
+    "@types/debug": "^4.1.13",
+    "@types/retry": "^0.12.5",
+    "@tufjs/repo-mock": "5.0.0"
+  },
+  "_npmOperationalInternal": {
+    "tmp": "tmp/tuf-js_6.0.0_1780345051472_0.7373878282907687",
+    "host": "s3://npm-registry-packages-npm-production"
+  },
+  "_id": "tuf-js@6.0.0",
+  "version": "6.0.0"
+}

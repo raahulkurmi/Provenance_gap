@@ -1,0 +1,147 @@
+{
+  "nx": {
+    "name": "typescript-eslint",
+    "targets": {
+      "lint": {
+        "command": "eslint"
+      },
+      "test": {
+        "dependsOn": [
+          "^build",
+          "typecheck"
+        ]
+      },
+      "attw-check": {
+        "cache": false,
+        "command": "pnpm pack --out attw-check.tgz && attw attw-check.tgz --profile node16 --ignore-rules cjs-only-exports-default",
+        "options": {
+          "cwd": "{projectRoot}"
+        },
+        "dependsOn": [
+          "build"
+        ]
+      },
+      "typecheck:tsgo": {}
+    },
+    "includedScripts": [
+      "clean"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/typescript-eslint/typescript-eslint/issues"
+  },
+  "dist": {
+    "shasum": "de51a17e3fe01b4d4b02ed3eb70646024167b527",
+    "tarball": "https://registry.npmjs.org/typescript-eslint/-/typescript-eslint-8.70.1.tgz",
+    "fileCount": 13,
+    "integrity": "sha512-AcWG7KDjZ2THNXsgwttMaGmzVi0VFRlFYfqFHYQRbDpF3owuYbuiL8c7UUrd2k8s3PoSfIQrWfrGXfcElrWLYA==",
+    "signatures": [
+      {
+        "sig": "MEYCIQDa5J26gAK25hdFZvFAtmu6HCQLKUCZQL+Q0hCr3Cup5AIhAO4S54dk8a4+67jlAlPIW0IGvIyR0ArmUZhzmaa1ms0C",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "sig": "MEUCIBWIQWkPVn4wW4Uqmkgc762QSvMEleBKuQRa4R7kP4kcAiEAuDF83YMG7t7NF4Umfy7wlzpQyaF+1Iyav3BJdBNuf1g=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/typescript-eslint@8.70.1",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 42688
+  },
+  "name": "typescript-eslint",
+  "type": "commonjs",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "funding": {
+    "url": "https://opencollective.com/typescript-eslint",
+    "type": "opencollective"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "pnpm -w exec nx lint",
+    "test": "pnpm -w exec nx test",
+    "build": "pnpm exec nx build",
+    "clean": "rimraf dist/ coverage/",
+    "format": "pnpm -w run format",
+    "typecheck": "pnpm -w exec nx typecheck",
+    "attw-check": "pnpm -w exec nx attw-check",
+    "typecheck:tsgo": "pnpm -w exec nx typecheck:tsgo"
+  },
+  "_npmUser": {
+    "name": "GitHub Actions",
+    "email": "npm-oidc-no-reply@github.com",
+    "trustedPublisher": {
+      "id": "github",
+      "oidcConfigId": "oidc:0aa75d23-74f9-4199-99b1-a017b80fadd2"
+    }
+  },
+  "homepage": "https://typescript-eslint.io/packages/typescript-eslint",
+  "keywords": [
+    "ast",
+    "ecmascript",
+    "javascript",
+    "typescript",
+    "parser",
+    "syntax",
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "repository": {
+    "url": "https://github.com/typescript-eslint/typescript-eslint.git",
+    "type": "git",
+    "directory": "packages/typescript-eslint"
+  },
+  "description": "Tooling which enables you to use TypeScript with ESLint",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "jameshenry",
+      "email": "james@henry.sc"
+    },
+    {
+      "name": "bradzacher",
+      "email": "brad.zacher@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "@typescript-eslint/utils": "8.70.1",
+    "@typescript-eslint/parser": "8.70.1",
+    "@typescript-eslint/eslint-plugin": "8.70.1",
+    "@typescript-eslint/typescript-estree": "8.70.1"
+  },
+  "_hasShrinkwrap": false,
+  "devDependencies": {
+    "eslint": "^10.0.0",
+    "rimraf": "^5.0.10",
+    "vitest": "^4.0.18",
+    "minimatch": "*",
+    "typescript": ">=4.8.4 <6.1.0",
+    "@typescript/native": "npm:typescript@^7.0.2",
+    "@vitest/coverage-v8": "^4.0.18"
+  },
+  "peerDependencies": {
+    "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0",
+    "typescript": ">=4.8.4 <6.1.0"
+  },
+  "_npmOperationalInternal": {
+    "tmp": "tmp/typescript-eslint_8.70.1_1790010475429_0.44429613294125914",
+    "host": "s3://npm-registry-packages-npm-production"
+  },
+  "_id": "typescript-eslint@8.70.1",
+  "version": "8.70.1"
+}

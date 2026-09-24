@@ -1,0 +1,83 @@
+{
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+      {
+        "name": "pkg:npm/%40playwright/test@1.63.0",
+        "digest": {
+          "sha512": "a3130ae2f96507d44ae4d436975a6ad487ce7f602f9c4ba3fef6060e3d07da732d9ad6692ad0b0b7f974d0610eeb18c67e904d02f8e8bef61d0a6e74751424a5"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+      "buildDefinition": {
+        "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+        "externalParameters": {
+          "workflow": {
+            "ref": "refs/tags/v1.63.0",
+            "repository": "https://github.com/microsoft/playwright",
+            "path": ".github/workflows/publish_release.yml"
+          }
+        },
+        "internalParameters": {
+          "github": {
+            "event_name": "release",
+            "repository_id": "221981891",
+            "repository_owner_id": "6154722"
+          }
+        },
+        "resolvedDependencies": [
+          {
+            "uri": "git+https://github.com/microsoft/playwright@refs/tags/v1.63.0",
+            "digest": {
+              "gitCommit": "1b025d7e20a026371cd5f98ba0cdce48892737c8"
+            }
+          }
+        ]
+      },
+      "runDetails": {
+        "builder": {
+          "id": "https://github.com/actions/runner/github-hosted"
+        },
+        "metadata": {
+          "invocationId": "https://github.com/microsoft/playwright/actions/runs/33926504498/attempts/1"
+        }
+      }
+    }
+  },
+  "signingCertificate": {
+    "subjectAltName": "URI:https://github.com/microsoft/playwright/.github/workflows/publish_release.yml@refs/tags/v1.63.0",
+    "issuer": "O=sigstore.dev, CN=sigstore-intermediate",
+    "notBefore": "Sep  4 22:42:15 2026 GMT",
+    "notAfter": "Sep  4 22:52:15 2026 GMT",
+    "fulcioClaims": {
+      "legacyIssuer": "https://token.actions.githubusercontent.com",
+      "legacyTrigger": "release",
+      "legacySha": "1b025d7e20a026371cd5f98ba0cdce48892737c8",
+      "legacyWorkflowName": "publish release - npm, trace viewer",
+      "legacyRepository": "microsoft/playwright",
+      "legacyRef": "refs/tags/v1.63.0",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "buildSignerURI": "https://github.com/microsoft/playwright/.github/workflows/publish_release.yml@refs/tags/v1.63.0",
+      "buildSignerDigest": "1b025d7e20a026371cd5f98ba0cdce48892737c8",
+      "runnerEnvironment": "github-hosted",
+      "sourceRepositoryURI": "https://github.com/microsoft/playwright",
+      "sourceRepositoryDigest": "1b025d7e20a026371cd5f98ba0cdce48892737c8",
+      "sourceRepositoryRef": "refs/tags/v1.63.0",
+      "sourceRepositoryIdentifier": "221981891",
+      "sourceRepositoryOwnerURI": "https://github.com/microsoft",
+      "sourceRepositoryOwnerIdentifier": "6154722",
+      "buildConfigURI": "https://github.com/microsoft/playwright/.github/workflows/publish_release.yml@refs/tags/v1.63.0",
+      "buildConfigDigest": "1b025d7e20a026371cd5f98ba0cdce48892737c8",
+      "buildTrigger": "release",
+      "runInvocationURI": "https://github.com/microsoft/playwright/actions/runs/33926504498/attempts/1",
+      "sourceRepositoryVisibilityAtSigning": "public"
+    }
+  },
+  "tlogEntry": {
+    "logIndex": "2717023282",
+    "integratedTime": "2026-09-04T22:42:16.000Z",
+    "kind": "dsse/0.0.1"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+      {
+        "name": "pkg:npm/vite@8.3.0",
+        "digest": {
+          "sha512": "96164156f10779f804f874190bd3bb101260094fe757314d97bbe44b8444d003ed58b3f4dbff10548910b730713eaba1ee5ab9ffbf0d1e2a538fb38343a5eec9"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+      "buildDefinition": {
+        "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+        "externalParameters": {
+          "workflow": {
+            "ref": "refs/heads/main",
+            "repository": "https://github.com/vitejs/vite",
+            "path": ".github/workflows/publish.yml"
+          }
+        },
+        "internalParameters": {
+          "github": {
+            "event_name": "push",
+            "repository_id": "257485422",
+            "repository_owner_id": "65625612"
+          }
+        },
+        "resolvedDependencies": [
+          {
+            "uri": "git+https://github.com/vitejs/vite@refs/heads/main",
+            "digest": {
+              "gitCommit": "434e8e9495436a60789f2b588a04a6a24a3d1661"
+            }
+          }
+        ]
+      },
+      "runDetails": {
+        "builder": {
+          "id": "https://github.com/actions/runner/github-hosted"
+        },
+        "metadata": {
+          "invocationId": "https://github.com/vitejs/vite/actions/runs/34470796591/attempts/1"
+        }
+      }
+    }
+  },
+  "signingCertificate": {
+    "subjectAltName": "URI:https://github.com/vitejs/vite/.github/workflows/publish.yml@refs/heads/main",
+    "issuer": "O=sigstore.dev, CN=sigstore-intermediate",
+    "notBefore": "Sep 10 11:25:09 2026 GMT",
+    "notAfter": "Sep 10 11:35:09 2026 GMT",
+    "fulcioClaims": {
+      "legacyIssuer": "https://token.actions.githubusercontent.com",
+      "legacyTrigger": "push",
+      "legacySha": "434e8e9495436a60789f2b588a04a6a24a3d1661",
+      "legacyWorkflowName": "Publish Package",
+      "legacyRepository": "vitejs/vite",
+      "legacyRef": "refs/heads/main",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "buildSignerURI": "https://github.com/vitejs/vite/.github/workflows/publish.yml@refs/heads/main",
+      "buildSignerDigest": "434e8e9495436a60789f2b588a04a6a24a3d1661",
+      "runnerEnvironment": "github-hosted",
+      "sourceRepositoryURI": "https://github.com/vitejs/vite",
+      "sourceRepositoryDigest": "434e8e9495436a60789f2b588a04a6a24a3d1661",
+      "sourceRepositoryRef": "refs/heads/main",
+      "sourceRepositoryIdentifier": "257485422",
+      "sourceRepositoryOwnerURI": "https://github.com/vitejs",
+      "sourceRepositoryOwnerIdentifier": "65625612",
+      "buildConfigURI": "https://github.com/vitejs/vite/.github/workflows/publish.yml@refs/heads/main",
+      "buildConfigDigest": "434e8e9495436a60789f2b588a04a6a24a3d1661",
+      "buildTrigger": "push",
+      "runInvocationURI": "https://github.com/vitejs/vite/actions/runs/34470796591/attempts/1",
+      "sourceRepositoryVisibilityAtSigning": "public"
+    }
+  },
+  "tlogEntry": {
+    "logIndex": "2782251595",
+    "integratedTime": "2026-09-10T11:25:09.000Z",
+    "kind": "dsse/0.0.1"
+  }
+}

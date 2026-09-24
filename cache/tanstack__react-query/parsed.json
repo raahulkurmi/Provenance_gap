@@ -1,0 +1,83 @@
+{
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+      {
+        "name": "pkg:npm/%40tanstack/react-query@5.103.2",
+        "digest": {
+          "sha512": "07e7d689864173ed2e503e730d901e2f0f5d2a3ed712c767baeeb3459fa7a3a2cd2a9784dcfddb27e37a1c836370895647a7d6def5284e77846866b657a7a1ab"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+      "buildDefinition": {
+        "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+        "externalParameters": {
+          "workflow": {
+            "ref": "refs/heads/main",
+            "repository": "https://github.com/TanStack/query",
+            "path": ".github/workflows/release.yml"
+          }
+        },
+        "internalParameters": {
+          "github": {
+            "event_name": "push",
+            "repository_id": "207645083",
+            "repository_owner_id": "72518640"
+          }
+        },
+        "resolvedDependencies": [
+          {
+            "uri": "git+https://github.com/TanStack/query@refs/heads/main",
+            "digest": {
+              "gitCommit": "e0f6c5542fc767f77a6cf1d5546591beae05f10f"
+            }
+          }
+        ]
+      },
+      "runDetails": {
+        "builder": {
+          "id": "https://github.com/actions/runner/github-hosted"
+        },
+        "metadata": {
+          "invocationId": "https://github.com/TanStack/query/actions/runs/35583595034/attempts/1"
+        }
+      }
+    }
+  },
+  "signingCertificate": {
+    "subjectAltName": "URI:https://github.com/TanStack/query/.github/workflows/release.yml@refs/heads/main",
+    "issuer": "O=sigstore.dev, CN=sigstore-intermediate",
+    "notBefore": "Sep 21 09:31:53 2026 GMT",
+    "notAfter": "Sep 21 09:41:53 2026 GMT",
+    "fulcioClaims": {
+      "legacyIssuer": "https://token.actions.githubusercontent.com",
+      "legacyTrigger": "push",
+      "legacySha": "e0f6c5542fc767f77a6cf1d5546591beae05f10f",
+      "legacyWorkflowName": "Release",
+      "legacyRepository": "TanStack/query",
+      "legacyRef": "refs/heads/main",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "buildSignerURI": "https://github.com/TanStack/query/.github/workflows/release.yml@refs/heads/main",
+      "buildSignerDigest": "e0f6c5542fc767f77a6cf1d5546591beae05f10f",
+      "runnerEnvironment": "github-hosted",
+      "sourceRepositoryURI": "https://github.com/TanStack/query",
+      "sourceRepositoryDigest": "e0f6c5542fc767f77a6cf1d5546591beae05f10f",
+      "sourceRepositoryRef": "refs/heads/main",
+      "sourceRepositoryIdentifier": "207645083",
+      "sourceRepositoryOwnerURI": "https://github.com/TanStack",
+      "sourceRepositoryOwnerIdentifier": "72518640",
+      "buildConfigURI": "https://github.com/TanStack/query/.github/workflows/release.yml@refs/heads/main",
+      "buildConfigDigest": "e0f6c5542fc767f77a6cf1d5546591beae05f10f",
+      "buildTrigger": "push",
+      "runInvocationURI": "https://github.com/TanStack/query/actions/runs/35583595034/attempts/1",
+      "sourceRepositoryVisibilityAtSigning": "public"
+    }
+  },
+  "tlogEntry": {
+    "logIndex": "2905368301",
+    "integratedTime": "2026-09-21T09:31:53.000Z",
+    "kind": "dsse/0.0.1"
+  }
+}

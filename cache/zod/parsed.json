@@ -1,0 +1,84 @@
+{
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+      {
+        "name": "pkg:npm/zod@4.6.5",
+        "digest": {
+          "sha512": "bf997f6855d941e6a2e1ac0b6cea52a0779c13d52232b9dfc7be6d1172e33689d754047143998e7a2a538d1394721b3350d0aa9c4fa1a8032e8d1b111ecbadd9"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+      "buildDefinition": {
+        "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+        "externalParameters": {
+          "workflow": {
+            "ref": "refs/heads/main",
+            "repository": "https://github.com/colinhacks/zod",
+            "path": ".github/workflows/release.yml"
+          }
+        },
+        "internalParameters": {
+          "github": {
+            "event_name": "workflow_dispatch",
+            "repository_id": "245704608",
+            "repository_owner_id": "3084745",
+            "runner_environment": "github-hosted"
+          }
+        },
+        "resolvedDependencies": [
+          {
+            "uri": "git+https://github.com/colinhacks/zod@refs/heads/main",
+            "digest": {
+              "gitCommit": "59bbc03e10c636b9eb3c393dfeb552819774ec21"
+            }
+          }
+        ]
+      },
+      "runDetails": {
+        "builder": {
+          "id": "https://github.com/actions/runner/github-hosted"
+        },
+        "metadata": {
+          "invocationId": "https://github.com/colinhacks/zod/actions/runs/34775805961/attempts/1"
+        }
+      }
+    }
+  },
+  "signingCertificate": {
+    "subjectAltName": "URI:https://github.com/colinhacks/zod/.github/workflows/release.yml@refs/heads/main",
+    "issuer": "O=sigstore.dev, CN=sigstore-intermediate",
+    "notBefore": "Sep 13 18:54:43 2026 GMT",
+    "notAfter": "Sep 13 19:04:43 2026 GMT",
+    "fulcioClaims": {
+      "legacyIssuer": "https://token.actions.githubusercontent.com",
+      "legacyTrigger": "workflow_dispatch",
+      "legacySha": "59bbc03e10c636b9eb3c393dfeb552819774ec21",
+      "legacyWorkflowName": "Release on npm",
+      "legacyRepository": "colinhacks/zod",
+      "legacyRef": "refs/heads/main",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "buildSignerURI": "https://github.com/colinhacks/zod/.github/workflows/release.yml@refs/heads/main",
+      "buildSignerDigest": "59bbc03e10c636b9eb3c393dfeb552819774ec21",
+      "runnerEnvironment": "github-hosted",
+      "sourceRepositoryURI": "https://github.com/colinhacks/zod",
+      "sourceRepositoryDigest": "59bbc03e10c636b9eb3c393dfeb552819774ec21",
+      "sourceRepositoryRef": "refs/heads/main",
+      "sourceRepositoryIdentifier": "245704608",
+      "sourceRepositoryOwnerURI": "https://github.com/colinhacks",
+      "sourceRepositoryOwnerIdentifier": "3084745",
+      "buildConfigURI": "https://github.com/colinhacks/zod/.github/workflows/release.yml@refs/heads/main",
+      "buildConfigDigest": "59bbc03e10c636b9eb3c393dfeb552819774ec21",
+      "buildTrigger": "workflow_dispatch",
+      "runInvocationURI": "https://github.com/colinhacks/zod/actions/runs/34775805961/attempts/1",
+      "sourceRepositoryVisibilityAtSigning": "public"
+    }
+  },
+  "tlogEntry": {
+    "logIndex": "2821139297",
+    "integratedTime": "2026-09-13T18:54:44.000Z",
+    "kind": "dsse/0.0.1"
+  }
+}

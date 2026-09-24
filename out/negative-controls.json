@@ -1,0 +1,87 @@
+{
+  "ranAt": "2026-09-24T12:34:15.592Z",
+  "missingFixtures": [],
+  "results": [
+    {
+      "id": "baseline-real",
+      "what": "unmodified real bundle (sigstore, refs/heads/main)",
+      "expect": "attests-origin-only",
+      "got": "attests-origin-only",
+      "pass": true,
+      "detail": "ref refs/heads/main is a branch; provenance does not record whether it was protected, so it cannot be confirmed as a protected context"
+    },
+    {
+      "id": "tagged-real",
+      "what": "unmodified real tag-published bundle (hono)",
+      "expect": "attests-with-context",
+      "got": "attests-with-context",
+      "pass": true,
+      "detail": "ref refs/tags/v4.13.9 with trigger \"push\" indicates a tagged-release run; tag protection and who created the tag are still not attested"
+    },
+    {
+      "id": "legacy-v0.2-real",
+      "what": "unmodified real 2023 SLSA v0.2 bundle (sigstore@1.5.0)",
+      "expect": "attests-origin-only",
+      "got": "attests-origin-only",
+      "pass": true,
+      "detail": "ref refs/heads/main is a branch; provenance does not record whether it was protected, so it cannot be confirmed as a protected context"
+    },
+    {
+      "id": "tampered-ref",
+      "what": "payload ref rewritten refs/heads/main -> refs/tags/v5.0.0 (the upgrade an attacker would want)",
+      "expect": "present-unverifiable [signature]",
+      "got": "present-unverifiable [signature,binding]",
+      "pass": true,
+      "detail": "[signature] sigstore: DSSE payload hash mismatch"
+    },
+    {
+      "id": "stripped-tlog",
+      "what": "Rekor transparency-log entries removed from the bundle",
+      "expect": "present-unverifiable [signature]",
+      "got": "present-unverifiable [signature]",
+      "pass": true,
+      "detail": "[signature] sigstore: expected 1 timestamps, got 0"
+    },
+    {
+      "id": "wrong-tarball",
+      "what": "valid bundle, but the tarball bytes are a different package",
+      "expect": "present-unverifiable [binding]",
+      "got": "present-unverifiable [binding]",
+      "pass": true,
+      "detail": "[binding] downloaded tarball sha512 != registry dist.integrity"
+    },
+    {
+      "id": "swapped-bundle",
+      "what": "another package's valid bundle served for this package",
+      "expect": "present-unverifiable [binding]",
+      "got": "present-unverifiable [binding]",
+      "pass": true,
+      "detail": "[binding] no subject named pkg:npm/sigstore@5.0.0 (subjects: pkg:npm/%40sigstore/bundle@5.0.0)"
+    },
+    {
+      "id": "unknown-format",
+      "what": "manifest advertises provenance, bundle has an unrecognized predicate type",
+      "expect": "present-unverifiable [parser]",
+      "got": "present-unverifiable [parser]",
+      "pass": true,
+      "detail": "[parser] manifest advertises https://slsa.dev/provenance/v1; bundle predicate type(s) https://example.invalid/provenance/v9 are not a format this tool parses"
+    },
+    {
+      "id": "bundle-404",
+      "what": "manifest advertises provenance, attestation URL returns 404",
+      "expect": "present-unverifiable [fetch]",
+      "got": "present-unverifiable [fetch]",
+      "pass": true,
+      "detail": "[fetch] manifest advertises https://slsa.dev/provenance/v1 but the attestation bundle could not be fetched: HTTP 404"
+    },
+    {
+      "id": "no-attestations",
+      "what": "manifest with dist.attestations removed",
+      "expect": "none",
+      "got": "none",
+      "pass": true,
+      "detail": "registry manifest has no dist.attestations: no provenance was published for this version"
+    }
+  ],
+  "allPass": true
+}

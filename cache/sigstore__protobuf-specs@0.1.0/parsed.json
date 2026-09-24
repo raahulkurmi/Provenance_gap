@@ -1,0 +1,81 @@
+{
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v0.1",
+    "subject": [
+      {
+        "name": "pkg:npm/%40sigstore/protobuf-specs@0.1.0",
+        "digest": {
+          "sha512": "6b7d449e3b880d25fc21705489bddc60b0d194f314dfa0165f8c52f32b0b68dbb867351eb0388fb7cde982b5b65f560b31ee4bd876c3c9a28ae41acbe1c34a69"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v0.2",
+    "predicate": {
+      "buildType": "https://github.com/npm/cli/gha@v1",
+      "builder": {
+        "id": "https://github.com/npm/cli@9.5.0"
+      },
+      "invocation": {
+        "configSource": {
+          "uri": "git+https://github.com/sigstore/protobuf-specs@refs/tags/release/typescript/v0.1.0",
+          "digest": {
+            "sha1": "44103a52d43eaf0f4c007e25227aac96bc0bcff9"
+          },
+          "entryPoint": "sigstore/protobuf-specs/.github/workflows/typescript-publish.yml@refs/tags/release/typescript/v0.1.0"
+        },
+        "parameters": {},
+        "environment": {
+          "GITHUB_ACTOR_ID": "10762948",
+          "GITHUB_EVENT_NAME": "push",
+          "GITHUB_REF": "refs/tags/release/typescript/v0.1.0",
+          "GITHUB_REF_TYPE": "tag",
+          "GITHUB_REPOSITORY": "sigstore/protobuf-specs",
+          "GITHUB_REPOSITORY_ID": "555326109",
+          "GITHUB_REPOSITORY_OWNER_ID": "71096353",
+          "GITHUB_RUN_ATTEMPT": "1",
+          "GITHUB_RUN_ID": "4236124559",
+          "GITHUB_RUN_NUMBER": "2",
+          "GITHUB_SHA": "44103a52d43eaf0f4c007e25227aac96bc0bcff9",
+          "GITHUB_WORKFLOW_REF": "sigstore/protobuf-specs/.github/workflows/typescript-publish.yml@refs/tags/release/typescript/v0.1.0",
+          "GITHUB_WORKFLOW_SHA": "44103a52d43eaf0f4c007e25227aac96bc0bcff9"
+        }
+      },
+      "metadata": {
+        "buildInvocationId": "4236124559-1",
+        "completeness": {
+          "parameters": false,
+          "environment": false,
+          "materials": false
+        },
+        "reproducible": false
+      },
+      "materials": [
+        {
+          "uri": "git+https://github.com/sigstore/protobuf-specs",
+          "digest": {
+            "sha1": "44103a52d43eaf0f4c007e25227aac96bc0bcff9"
+          }
+        }
+      ]
+    }
+  },
+  "signingCertificate": {
+    "subjectAltName": "URI:https://github.com/sigstore/protobuf-specs/.github/workflows/typescript-publish.yml@refs/tags/release/typescript/v0.1.0",
+    "issuer": "O=sigstore.dev, CN=sigstore-intermediate",
+    "notBefore": "Feb 21 19:21:25 2023 GMT",
+    "notAfter": "Feb 21 19:31:25 2023 GMT",
+    "fulcioClaims": {
+      "legacyIssuer": "https://token.actions.githubusercontent.com",
+      "legacyTrigger": "push",
+      "legacySha": "44103a52d43eaf0f4c007e25227aac96bc0bcff9",
+      "legacyWorkflowName": "Release TypeScript package",
+      "legacyRepository": "sigstore/protobuf-specs",
+      "legacyRef": "refs/tags/release/typescript/v0.1.0"
+    }
+  },
+  "tlogEntry": {
+    "logIndex": "13862736",
+    "integratedTime": "2023-02-21T19:21:25.000Z",
+    "kind": "intoto/0.0.2"
+  }
+}

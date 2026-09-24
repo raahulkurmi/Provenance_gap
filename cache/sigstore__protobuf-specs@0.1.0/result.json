@@ -1,0 +1,47 @@
+{
+  "name": "@sigstore/protobuf-specs",
+  "version": "0.1.0",
+  "provenancePresent": true,
+  "verified": true,
+  "verifyErrors": [],
+  "attested": {
+    "predicateType": "https://slsa.dev/provenance/v0.2",
+    "buildType": "https://github.com/npm/cli/gha@v1",
+    "sourceRepo": "https://github.com/sigstore/protobuf-specs",
+    "workflowPath": ".github/workflows/typescript-publish.yml",
+    "ref": "refs/tags/release/typescript/v0.1.0",
+    "commit": "44103a52d43eaf0f4c007e25227aac96bc0bcff9",
+    "event": "push",
+    "builderId": "https://github.com/npm/cli@9.5.0",
+    "invocationId": "https://github.com/sigstore/protobuf-specs/actions/runs/4236124559/attempts/1",
+    "runnerEnvironment": null,
+    "repoVisibility": null,
+    "oidcIssuer": "https://token.actions.githubusercontent.com",
+    "signerIdentity": "URI:https://github.com/sigstore/protobuf-specs/.github/workflows/typescript-publish.yml@refs/tags/release/typescript/v0.1.0",
+    "signerWorkflow": null,
+    "signerIsReusable": false
+  },
+  "tlog": {
+    "logIndex": "13862736",
+    "integratedTime": "2023-02-21T19:21:25.000Z",
+    "kind": "intoto/0.0.2"
+  },
+  "publishAttestation": "verified",
+  "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.1",
+  "subjectDigestMatches": true,
+  "absentAuthzFacts": [
+    "branch/tag protection or ruleset state at build time",
+    "human approval / environment reviewer sign-off",
+    "review status of the commit or workflow file",
+    "integrity of build inputs outside the commit (caches, actions)"
+  ],
+  "failureKinds": [],
+  "tier": "attests-with-context",
+  "reasons": [
+    "ref refs/tags/release/typescript/v0.1.0 with trigger \"push\" indicates a tagged-release run; tag protection and who created the tag are still not attested"
+  ],
+  "spec": "@sigstore/protobuf-specs@0.1.0",
+  "pinned": true,
+  "cacheDir": "cache/sigstore__protobuf-specs@0.1.0",
+  "npmAudit": "no errors"
+}

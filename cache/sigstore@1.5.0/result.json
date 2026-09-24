@@ -1,0 +1,48 @@
+{
+  "name": "sigstore",
+  "version": "1.5.0",
+  "provenancePresent": true,
+  "verified": true,
+  "verifyErrors": [],
+  "attested": {
+    "predicateType": "https://slsa.dev/provenance/v0.2",
+    "buildType": "https://github.com/npm/cli/gha/v2",
+    "sourceRepo": "https://github.com/sigstore/sigstore-js",
+    "workflowPath": ".github/workflows/release.yml",
+    "ref": "refs/heads/main",
+    "commit": "b83096d2e93b10ff41b62133831c6e345877560b",
+    "event": "push",
+    "builderId": "https://github.com/actions/runner",
+    "invocationId": "https://github.com/sigstore/sigstore-js/actions/runs/4950330706/attempts/1",
+    "runnerEnvironment": "github-hosted",
+    "repoVisibility": null,
+    "oidcIssuer": "https://token.actions.githubusercontent.com",
+    "signerIdentity": "URI:https://github.com/sigstore/sigstore-js/.github/workflows/release.yml@refs/heads/main",
+    "signerWorkflow": "https://github.com/sigstore/sigstore-js/.github/workflows/release.yml@refs/heads/main",
+    "signerIsReusable": false
+  },
+  "tlog": {
+    "logIndex": "20329249",
+    "integratedTime": "2023-05-11T16:38:48.000Z",
+    "kind": "intoto/0.0.2"
+  },
+  "publishAttestation": "verified",
+  "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.1",
+  "subjectDigestMatches": true,
+  "absentAuthzFacts": [
+    "branch/tag protection or ruleset state at build time",
+    "identity of the actor who triggered the run",
+    "human approval / environment reviewer sign-off",
+    "review status of the commit or workflow file",
+    "integrity of build inputs outside the commit (caches, actions)"
+  ],
+  "failureKinds": [],
+  "tier": "attests-origin-only",
+  "reasons": [
+    "ref refs/heads/main is a branch; provenance does not record whether it was protected, so it cannot be confirmed as a protected context"
+  ],
+  "spec": "sigstore@1.5.0",
+  "pinned": true,
+  "cacheDir": "cache/sigstore@1.5.0",
+  "npmAudit": "no errors"
+}

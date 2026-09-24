@@ -1,0 +1,83 @@
+{
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+      {
+        "name": "pkg:npm/%40prisma/client@7.10.0",
+        "digest": {
+          "sha512": "51bc3f412f49188052054b32c40510b8afc972ed13b2f6bb95eed06cb77dd4a8b1f7226f603763e509308046db667887f3475dfacce241c00b3dcf879ef402f1"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+      "buildDefinition": {
+        "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+        "externalParameters": {
+          "workflow": {
+            "ref": "refs/heads/v7",
+            "repository": "https://github.com/prisma/prisma",
+            "path": ".github/workflows/publish.yml"
+          }
+        },
+        "internalParameters": {
+          "github": {
+            "event_name": "workflow_dispatch",
+            "repository_id": "192925833",
+            "repository_owner_id": "17219288"
+          }
+        },
+        "resolvedDependencies": [
+          {
+            "uri": "git+https://github.com/prisma/prisma@refs/heads/v7",
+            "digest": {
+              "gitCommit": "e92bc46e8fff73e3985f86f23393b7e3f0e90010"
+            }
+          }
+        ]
+      },
+      "runDetails": {
+        "builder": {
+          "id": "https://github.com/actions/runner/github-hosted"
+        },
+        "metadata": {
+          "invocationId": "https://github.com/prisma/prisma/actions/runs/32847731191/attempts/1"
+        }
+      }
+    }
+  },
+  "signingCertificate": {
+    "subjectAltName": "URI:https://github.com/prisma/prisma/.github/workflows/publish.yml@refs/heads/v7",
+    "issuer": "O=sigstore.dev, CN=sigstore-intermediate",
+    "notBefore": "Aug 25 12:44:10 2026 GMT",
+    "notAfter": "Aug 25 12:54:10 2026 GMT",
+    "fulcioClaims": {
+      "legacyIssuer": "https://token.actions.githubusercontent.com",
+      "legacyTrigger": "workflow_dispatch",
+      "legacySha": "e92bc46e8fff73e3985f86f23393b7e3f0e90010",
+      "legacyWorkflowName": "v7 - npm - release",
+      "legacyRepository": "prisma/prisma",
+      "legacyRef": "refs/heads/v7",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "buildSignerURI": "https://github.com/prisma/prisma/.github/workflows/publish.yml@refs/heads/v7",
+      "buildSignerDigest": "e92bc46e8fff73e3985f86f23393b7e3f0e90010",
+      "runnerEnvironment": "github-hosted",
+      "sourceRepositoryURI": "https://github.com/prisma/prisma",
+      "sourceRepositoryDigest": "e92bc46e8fff73e3985f86f23393b7e3f0e90010",
+      "sourceRepositoryRef": "refs/heads/v7",
+      "sourceRepositoryIdentifier": "192925833",
+      "sourceRepositoryOwnerURI": "https://github.com/prisma",
+      "sourceRepositoryOwnerIdentifier": "17219288",
+      "buildConfigURI": "https://github.com/prisma/prisma/.github/workflows/publish.yml@refs/heads/v7",
+      "buildConfigDigest": "e92bc46e8fff73e3985f86f23393b7e3f0e90010",
+      "buildTrigger": "workflow_dispatch",
+      "runInvocationURI": "https://github.com/prisma/prisma/actions/runs/32847731191/attempts/1",
+      "sourceRepositoryVisibilityAtSigning": "public"
+    }
+  },
+  "tlogEntry": {
+    "logIndex": "2583348078",
+    "integratedTime": "2026-08-25T12:44:10.000Z",
+    "kind": "dsse/0.0.1"
+  }
+}

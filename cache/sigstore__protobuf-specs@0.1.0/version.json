@@ -1,0 +1,74 @@
+{
+  "bugs": {
+    "url": "https://github.com/sigstore/protobuf-specs/issues"
+  },
+  "dist": {
+    "shasum": "957cb64ea2f5ce527cc9cf02a096baeb0d2b99b4",
+    "tarball": "https://registry.npmjs.org/@sigstore/protobuf-specs/-/protobuf-specs-0.1.0.tgz",
+    "fileCount": 23,
+    "integrity": "sha512-a31EnjuIDSX8IXBUib3cYLDRlPMU36AWX4xS8ysLaNu4ZzUesDiPt83pgrW2X1YLMe5L2HbDyaKK5BrL4cNKaQ==",
+    "signatures": [
+      {
+        "sig": "MEUCIQCInyb76iLetZrewffErEweW3JrqM06mYcsxnQaNOBPxwIgbwKc7gUGuAnJM4OQ+rcdESNGwrcgz9+gTnBrPy74XGM=",
+        "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fprotobuf-specs@0.1.0",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v0.2"
+      }
+    },
+    "unpackedSize": 197693,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJj9Rm2ACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmqTAA//VFlzW7khM7mIP1QzoMLWN7selKGnJ0VcvzVcFs75sY9AcRXI\r\nOwZBX/1GMvGjcuB+PBHVm+ETybB8k9pA249GHtlt9rNFaj/YnvyWd8pJNikN\r\nEDEEijFU+KndnvGPu1ARW2ZRq1Fp34P8jXGYgCrhaNL7Z+p9pHBcXUQowo6x\r\n9y8YZt9a0YjZMuVCIpuhEQDKQr2140cMGvJmklh0hP6LPB4yArzC2CyIQT70\r\nuNypKFyyYJotsrHcFIDKYbYNrjpT6bsnAtxPl6jPNVxYX5kt3tBcMXaQOOgQ\r\n3Fr2spz0ONL7lkpJYtxuCXNT2CK88Ed9ZUqT+mJYYSiqOL9dlTAhLrLnIAVm\r\nRwX+wIkzAQOSIICY/V48tf/LbgI/cL2Ip0ZP+Xvo+nOgIfGYriwN/peZuiUJ\r\nHTkaSRoX0wwdKjP0DMhPKsGKAOJcdsDKsferfxHiT0qE8mScyHaRIQgCo6KY\r\nJYVVovrDoKetEy2u0MIB559OScTSm+GbDEkgzRhGZbnaS8TEv04Xfs19YoaN\r\nJ4AGFCA5QIriZfTcYu5mnoifeicrwR90ewjJw2vDn6zHZXgfMumteMvglrn2\r\nCfny+cfHMnib3t0J1pMwwx89HzkOQPj5VztnKEO/fC3hEAmlZo7Qi85B64vT\r\novsqF9bZ07fIZhwjguo5SvHPQB4bO+jpCNw=\r\n=aC6R\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "main": "dist/index.js",
+  "name": "@sigstore/protobuf-specs",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "bdehamer@github.com"
+  },
+  "engines": {
+    "node": "^14.17.0 || ^16.13.0 || >=18.0.0"
+  },
+  "gitHead": "44103a52d43eaf0f4c007e25227aac96bc0bcff9",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc"
+  },
+  "_npmUser": {
+    "name": "bdehamer",
+    "email": "brian@dehamer.com"
+  },
+  "homepage": "https://github.com/sigstore/protobuf-specs#readme",
+  "repository": {
+    "url": "git+https://github.com/sigstore/protobuf-specs.git",
+    "type": "git"
+  },
+  "_npmVersion": "9.5.0",
+  "description": "code-signing for npm packages",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "bdehamer",
+      "email": "brian@dehamer.com"
+    },
+    {
+      "name": "mylesborins",
+      "email": "myles.borins@gmail.com"
+    }
+  ],
+  "_nodeVersion": "16.19.0",
+  "_hasShrinkwrap": false,
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "@types/node": "^18.14.0",
+    "@tsconfig/node14": "^1.0.3"
+  },
+  "_npmOperationalInternal": {
+    "tmp": "tmp/protobuf-specs_0.1.0_1677007286319_0.182463123821345",
+    "host": "s3://npm-registry-packages"
+  },
+  "_id": "@sigstore/protobuf-specs@0.1.0",
+  "version": "0.1.0"
+}

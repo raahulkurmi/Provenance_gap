@@ -1,0 +1,83 @@
+{
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+      {
+        "name": "pkg:npm/pacote@22.0.0",
+        "digest": {
+          "sha512": "fbe56a78e65e2f4dee18cd8c14b93dea31824add68c011a4c852a83ebfadaf03656610a98cdd91aefc18c6df274dbb35c0d32a48562eaead1369f5569002078a"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+      "buildDefinition": {
+        "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+        "externalParameters": {
+          "workflow": {
+            "ref": "refs/heads/main",
+            "repository": "https://github.com/npm/pacote",
+            "path": ".github/workflows/release.yml"
+          }
+        },
+        "internalParameters": {
+          "github": {
+            "event_name": "push",
+            "repository_id": "193812680",
+            "repository_owner_id": "6078720"
+          }
+        },
+        "resolvedDependencies": [
+          {
+            "uri": "git+https://github.com/npm/pacote@refs/heads/main",
+            "digest": {
+              "gitCommit": "e4e44c5428c840d853b5ef8641e169b5b79328ab"
+            }
+          }
+        ]
+      },
+      "runDetails": {
+        "builder": {
+          "id": "https://github.com/actions/runner/github-hosted"
+        },
+        "metadata": {
+          "invocationId": "https://github.com/npm/pacote/actions/runs/27573305150/attempts/1"
+        }
+      }
+    }
+  },
+  "signingCertificate": {
+    "subjectAltName": "URI:https://github.com/npm/pacote/.github/workflows/release-integration.yml@refs/heads/main",
+    "issuer": "O=sigstore.dev, CN=sigstore-intermediate",
+    "notBefore": "Jun 15 20:14:25 2026 GMT",
+    "notAfter": "Jun 15 20:24:25 2026 GMT",
+    "fulcioClaims": {
+      "legacyIssuer": "https://token.actions.githubusercontent.com",
+      "legacyTrigger": "push",
+      "legacySha": "e4e44c5428c840d853b5ef8641e169b5b79328ab",
+      "legacyWorkflowName": "Release",
+      "legacyRepository": "npm/pacote",
+      "legacyRef": "refs/heads/main",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "buildSignerURI": "https://github.com/npm/pacote/.github/workflows/release-integration.yml@refs/heads/main",
+      "buildSignerDigest": "e4e44c5428c840d853b5ef8641e169b5b79328ab",
+      "runnerEnvironment": "github-hosted",
+      "sourceRepositoryURI": "https://github.com/npm/pacote",
+      "sourceRepositoryDigest": "e4e44c5428c840d853b5ef8641e169b5b79328ab",
+      "sourceRepositoryRef": "refs/heads/main",
+      "sourceRepositoryIdentifier": "193812680",
+      "sourceRepositoryOwnerURI": "https://github.com/npm",
+      "sourceRepositoryOwnerIdentifier": "6078720",
+      "buildConfigURI": "https://github.com/npm/pacote/.github/workflows/release.yml@refs/heads/main",
+      "buildConfigDigest": "e4e44c5428c840d853b5ef8641e169b5b79328ab",
+      "buildTrigger": "push",
+      "runInvocationURI": "https://github.com/npm/pacote/actions/runs/27573305150/attempts/1",
+      "sourceRepositoryVisibilityAtSigning": "public"
+    }
+  },
+  "tlogEntry": {
+    "logIndex": "1828008328",
+    "integratedTime": "2026-06-15T20:14:25.000Z",
+    "kind": "dsse/0.0.1"
+  }
+}

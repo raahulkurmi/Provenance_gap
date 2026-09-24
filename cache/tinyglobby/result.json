@@ -1,0 +1,48 @@
+{
+  "name": "tinyglobby",
+  "version": "0.2.17",
+  "provenancePresent": true,
+  "verified": true,
+  "verifyErrors": [],
+  "attested": {
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+    "sourceRepo": "https://github.com/SuperchupuDev/tinyglobby",
+    "workflowPath": ".github/workflows/publish.yml",
+    "ref": "refs/tags/0.2.17",
+    "commit": "f80cb8448dc5058f38bc25642375c1934112c7ba",
+    "event": "release",
+    "builderId": "https://github.com/actions/runner/github-hosted",
+    "invocationId": "https://github.com/SuperchupuDev/tinyglobby/actions/runs/26693408625/attempts/1",
+    "runnerEnvironment": "github-hosted",
+    "repoVisibility": "public",
+    "oidcIssuer": "https://token.actions.githubusercontent.com",
+    "signerIdentity": "URI:https://github.com/SuperchupuDev/tinyglobby/.github/workflows/publish.yml@refs/tags/0.2.17",
+    "signerWorkflow": "https://github.com/SuperchupuDev/tinyglobby/.github/workflows/publish.yml@refs/tags/0.2.17",
+    "signerIsReusable": false
+  },
+  "tlog": {
+    "logIndex": "1676317939",
+    "integratedTime": "2026-05-30T19:54:48.000Z",
+    "kind": "dsse/0.0.1"
+  },
+  "publishAttestation": "verified",
+  "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+  "subjectDigestMatches": true,
+  "absentAuthzFacts": [
+    "branch/tag protection or ruleset state at build time",
+    "identity of the actor who triggered the run",
+    "human approval / environment reviewer sign-off",
+    "review status of the commit or workflow file",
+    "integrity of build inputs outside the commit (caches, actions)"
+  ],
+  "failureKinds": [],
+  "tier": "attests-with-context",
+  "reasons": [
+    "ref refs/tags/0.2.17 with trigger \"release\" indicates a tagged-release run; tag protection and who created the tag are still not attested"
+  ],
+  "spec": "tinyglobby",
+  "pinned": false,
+  "cacheDir": "cache/tinyglobby",
+  "npmAudit": "no errors"
+}

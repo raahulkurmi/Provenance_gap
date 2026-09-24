@@ -1,0 +1,83 @@
+{
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+      {
+        "name": "pkg:npm/semver@7.8.5",
+        "digest": {
+          "sha512": "63bfca0ec6fc2e3a28669c1aa86cae94ee8342592c8029dc7211c693eb19218e1206f52870c044147e54af57c8e1d57e26f974c3a723bee71a222e34a6e462a0"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+      "buildDefinition": {
+        "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+        "externalParameters": {
+          "workflow": {
+            "ref": "refs/heads/main",
+            "repository": "https://github.com/npm/node-semver",
+            "path": ".github/workflows/release.yml"
+          }
+        },
+        "internalParameters": {
+          "github": {
+            "event_name": "push",
+            "repository_id": "1357199",
+            "repository_owner_id": "6078720"
+          }
+        },
+        "resolvedDependencies": [
+          {
+            "uri": "git+https://github.com/npm/node-semver@refs/heads/main",
+            "digest": {
+              "gitCommit": "6e05b7637396ac66522cff8731f07cfe0ef49a29"
+            }
+          }
+        ]
+      },
+      "runDetails": {
+        "builder": {
+          "id": "https://github.com/actions/runner/github-hosted"
+        },
+        "metadata": {
+          "invocationId": "https://github.com/npm/node-semver/actions/runs/27842314701/attempts/1"
+        }
+      }
+    }
+  },
+  "signingCertificate": {
+    "subjectAltName": "URI:https://github.com/npm/node-semver/.github/workflows/release-integration.yml@refs/heads/main",
+    "issuer": "O=sigstore.dev, CN=sigstore-intermediate",
+    "notBefore": "Jun 19 18:32:47 2026 GMT",
+    "notAfter": "Jun 19 18:42:47 2026 GMT",
+    "fulcioClaims": {
+      "legacyIssuer": "https://token.actions.githubusercontent.com",
+      "legacyTrigger": "push",
+      "legacySha": "6e05b7637396ac66522cff8731f07cfe0ef49a29",
+      "legacyWorkflowName": "Release",
+      "legacyRepository": "npm/node-semver",
+      "legacyRef": "refs/heads/main",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "buildSignerURI": "https://github.com/npm/node-semver/.github/workflows/release-integration.yml@refs/heads/main",
+      "buildSignerDigest": "6e05b7637396ac66522cff8731f07cfe0ef49a29",
+      "runnerEnvironment": "github-hosted",
+      "sourceRepositoryURI": "https://github.com/npm/node-semver",
+      "sourceRepositoryDigest": "6e05b7637396ac66522cff8731f07cfe0ef49a29",
+      "sourceRepositoryRef": "refs/heads/main",
+      "sourceRepositoryIdentifier": "1357199",
+      "sourceRepositoryOwnerURI": "https://github.com/npm",
+      "sourceRepositoryOwnerIdentifier": "6078720",
+      "buildConfigURI": "https://github.com/npm/node-semver/.github/workflows/release.yml@refs/heads/main",
+      "buildConfigDigest": "6e05b7637396ac66522cff8731f07cfe0ef49a29",
+      "buildTrigger": "push",
+      "runInvocationURI": "https://github.com/npm/node-semver/actions/runs/27842314701/attempts/1",
+      "sourceRepositoryVisibilityAtSigning": "public"
+    }
+  },
+  "tlogEntry": {
+    "logIndex": "1873023517",
+    "integratedTime": "2026-06-19T18:32:47.000Z",
+    "kind": "dsse/0.0.1"
+  }
+}

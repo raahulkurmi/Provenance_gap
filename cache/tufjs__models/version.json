@@ -1,0 +1,83 @@
+{
+  "bugs": {
+    "url": "https://github.com/theupdateframework/tuf-js/issues"
+  },
+  "dist": {
+    "shasum": "86a81bdb415dff73b4349a0a7de465acef3b4f2c",
+    "tarball": "https://registry.npmjs.org/@tufjs/models/-/models-5.0.0.tgz",
+    "fileCount": 41,
+    "integrity": "sha512-U4mVcdFGOi6pt8n38LdWZp67Svn7ppnU1Pj8SGOVaBi1X4gm+G4ztQlLfkoJbKSHfjA6WeaiJp2A4V83AJF6nQ==",
+    "signatures": [
+      {
+        "sig": "MEQCIFiUnCu7G5rFAngvsynlHnO4ScjuNfX36T2gB7Q0/1QqAiBgHibZpMzaW7qpIJPHwTZHsroKFjT1BQcaDmH2qp6VKg==",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@tufjs%2fmodels@5.0.0",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 78757
+  },
+  "main": "dist/index.js",
+  "name": "@tufjs/models",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "bdehamer@github.com"
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "gitHead": "c30653d07f0c41fbe5a2030d25eca6fd04f8547f",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc --build tsconfig.build.json",
+    "clean": "rm -rf dist && rm tsconfig.build.tsbuildinfo"
+  },
+  "_npmUser": {
+    "name": "GitHub Actions",
+    "email": "npm-oidc-no-reply@github.com",
+    "trustedPublisher": {
+      "id": "github",
+      "oidcConfigId": "oidc:6601b2fb-c42a-493c-a418-fe37e17bfece"
+    }
+  },
+  "homepage": "https://github.com/theupdateframework/tuf-js/tree/main/packages/models#readme",
+  "keywords": [
+    "tuf",
+    "security",
+    "update"
+  ],
+  "repository": {
+    "url": "git+https://github.com/theupdateframework/tuf-js.git",
+    "type": "git"
+  },
+  "_npmVersion": "11.13.0",
+  "description": "TUF metadata models",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "eugenethehub",
+      "email": "ejahngithub@github.com"
+    },
+    {
+      "name": "bdehamer",
+      "email": "brian@dehamer.com"
+    }
+  ],
+  "_nodeVersion": "24.16.0",
+  "dependencies": {
+    "minimatch": "^10.2.1",
+    "@tufjs/canonical-json": "2.0.0"
+  },
+  "_hasShrinkwrap": false,
+  "_npmOperationalInternal": {
+    "tmp": "tmp/models_5.0.0_1780345051524_0.7715468554117122",
+    "host": "s3://npm-registry-packages-npm-production"
+  },
+  "_id": "@tufjs/models@5.0.0",
+  "version": "5.0.0"
+}

@@ -1,0 +1,83 @@
+{
+  "statement": {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+      {
+        "name": "pkg:npm/pnpm@12.6.0",
+        "digest": {
+          "sha512": "3ef68f951cb111ac204b4a5a16f0b2ddf0da56a96e0413e81d855d9f0b55ef926714709028e1cd00c405c2c5fb7b9e8ec4dc46777c805d0373c2f2ff00fd20ec"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+      "buildDefinition": {
+        "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+        "externalParameters": {
+          "workflow": {
+            "ref": "refs/tags/v12.6.0",
+            "repository": "https://github.com/pnpm/pnpm",
+            "path": ".github/workflows/release.yml"
+          }
+        },
+        "internalParameters": {
+          "github": {
+            "event_name": "push",
+            "repository_id": "50565430",
+            "repository_owner_id": "21320719"
+          }
+        },
+        "resolvedDependencies": [
+          {
+            "uri": "git+https://github.com/pnpm/pnpm@refs/tags/v12.6.0",
+            "digest": {
+              "gitCommit": "a959dceda501e552dbb03bbab19ab5e060718fde"
+            }
+          }
+        ]
+      },
+      "runDetails": {
+        "builder": {
+          "id": "https://github.com/actions/runner/github-hosted"
+        },
+        "metadata": {
+          "invocationId": "https://github.com/pnpm/pnpm/actions/runs/35753128540/attempts/1"
+        }
+      }
+    }
+  },
+  "signingCertificate": {
+    "subjectAltName": "URI:https://github.com/pnpm/pnpm/.github/workflows/release.yml@refs/tags/v12.6.0",
+    "issuer": "O=sigstore.dev, CN=sigstore-intermediate",
+    "notBefore": "Sep 22 16:44:53 2026 GMT",
+    "notAfter": "Sep 22 16:54:53 2026 GMT",
+    "fulcioClaims": {
+      "legacyIssuer": "https://token.actions.githubusercontent.com",
+      "legacyTrigger": "push",
+      "legacySha": "a959dceda501e552dbb03bbab19ab5e060718fde",
+      "legacyWorkflowName": "Release",
+      "legacyRepository": "pnpm/pnpm",
+      "legacyRef": "refs/tags/v12.6.0",
+      "issuer": "https://token.actions.githubusercontent.com",
+      "buildSignerURI": "https://github.com/pnpm/pnpm/.github/workflows/release.yml@refs/tags/v12.6.0",
+      "buildSignerDigest": "a959dceda501e552dbb03bbab19ab5e060718fde",
+      "runnerEnvironment": "github-hosted",
+      "sourceRepositoryURI": "https://github.com/pnpm/pnpm",
+      "sourceRepositoryDigest": "a959dceda501e552dbb03bbab19ab5e060718fde",
+      "sourceRepositoryRef": "refs/tags/v12.6.0",
+      "sourceRepositoryIdentifier": "50565430",
+      "sourceRepositoryOwnerURI": "https://github.com/pnpm",
+      "sourceRepositoryOwnerIdentifier": "21320719",
+      "buildConfigURI": "https://github.com/pnpm/pnpm/.github/workflows/release.yml@refs/tags/v12.6.0",
+      "buildConfigDigest": "a959dceda501e552dbb03bbab19ab5e060718fde",
+      "buildTrigger": "push",
+      "runInvocationURI": "https://github.com/pnpm/pnpm/actions/runs/35753128540/attempts/1",
+      "sourceRepositoryVisibilityAtSigning": "public"
+    }
+  },
+  "tlogEntry": {
+    "logIndex": "2910003560",
+    "integratedTime": "2026-09-22T16:44:53.000Z",
+    "kind": "dsse/0.0.1"
+  }
+}

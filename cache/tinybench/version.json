@@ -1,0 +1,92 @@
+{
+  "bugs": {
+    "url": "https://github.com/tinylibs/tinybench/issues"
+  },
+  "dist": {
+    "shasum": "392834d90f72567ee35330b4bc8f58e62e9e1d4d",
+    "tarball": "https://registry.npmjs.org/tinybench/-/tinybench-6.2.0.tgz",
+    "fileCount": 5,
+    "integrity": "sha512-78U2TlB2CnVenajOFzf3BKSm0J6oz5L0NV7g32LCPccvYc0lbWvys4d3uUUCS2B1N8PAf2+aekR8i1KbC3HO7Q==",
+    "signatures": [
+      {
+        "sig": "MEUCIAZ6hMDHlq996zOWla/M3RaoMW5yC+moDpf1EZwB6yL+AiEAqvJXIqa9qAVdjDKMzwIDsJHESHc3Ei5DI97xuCfGK1c=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/tinybench@6.2.0",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 106193
+  },
+  "main": "./dist/index.js",
+  "name": "tinybench",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "volta": {
+    "node": "24.21.0",
+    "pnpm": "12.3.4"
+  },
+  "module": "./dist/index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "license": "MIT",
+  "scripts": {},
+  "_npmUser": {
+    "name": "GitHub Actions",
+    "email": "npm-oidc-no-reply@github.com",
+    "approver": {
+      "name": "fraggle",
+      "email": "jerome.benoit@piment-noir.org"
+    },
+    "trustedPublisher": {
+      "id": "github",
+      "oidcConfigId": "oidc:4c7f2996-c40e-4d25-a241-8738cdc49d73"
+    }
+  },
+  "homepage": "https://github.com/tinylibs/tinybench#readme",
+  "keywords": [
+    "benchmark",
+    "tinylibs",
+    "tiny"
+  ],
+  "repository": {
+    "url": "tinylibs/tinybench",
+    "type": "git"
+  },
+  "description": "🔎 A simple, tiny and lightweight benchmarking library!",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "aslemammad",
+      "email": "zorofight94@gmail.com"
+    },
+    {
+      "name": "uzlopak",
+      "email": "aras.abbasi@googlemail.com"
+    },
+    {
+      "name": "fraggle",
+      "email": "jerome.benoit@piment-noir.org"
+    }
+  ],
+  "publishConfig": {
+    "directory": "package"
+  },
+  "_hasShrinkwrap": false,
+  "_npmOperationalInternal": {
+    "tmp": "tmp/tinybench_6.2.0_1788983656590_0.23349461179699027",
+    "host": "s3://npm-registry-packages-npm-production"
+  },
+  "_id": "tinybench@6.2.0",
+  "version": "6.2.0"
+}
