@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "provenance-gap: what npm package provenance attests about build authorization"
+authors:
+  - family-names: Kurmi
+    given-names: Rahul
+repository-code: "https://github.com/raahulkurmi/Provenance_gap"
+url: "https://github.com/raahulkurmi/Provenance_gap"
+version: 0cf28d9
+commit: 0cf28d904d97921ff89d6079e67d28415f0b0aa4
+type: software
+preferred-citation:
+  type: software
+  title: "provenance-gap: what npm package provenance attests about build authorization"
+  authors:
+    - family-names: Kurmi
+      given-names: Rahul
+  year: 2026
+  url: "https://github.com/raahulkurmi/Provenance_gap"

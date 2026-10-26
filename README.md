@@ -1,5 +1,13 @@
 # provenance-gap
 
+## TL;DR
+
+- **Question.** When an npm package's SLSA provenance verifies, what does it actually say about whether the build was authorized?
+- **What was done.** The provenance of 30 hand-picked npm packages was fetched and verified (Sigstore signature, certificate chain, Rekor inclusion, tarball binding), and every field was searched for authorization facts ([`report.md`](report.md)).
+- **Headline.** SLSA provenance verified for all 26 packages that published it (4 published none). None of the 26 recorded whether the branch or tag was protected: that fact was absent in 26/26.
+- **What it does not show.** That any package is malicious, or that any branch or tag was unprotected; only that the attestation does not carry it. The sample was chosen to cover every tier, so it describes these 30 packages at one point in time, not npm.
+- **Pre-registration.** None. This measurement was not pre-registered: the code and the committed results were added together in the first commit, `392fae1`.
+
 Measures the gap between what npm package provenance **attests** and what a
 consumer might **assume** it guarantees.
 
@@ -508,6 +516,16 @@ cache/<pkg>/              version.json, attestations.json (raw bundles),
                           certificate claims, Rekor entry), result.json
 cache/_tuf/, cache/_npm-audit/   local-only scratch (git-ignored)
 ```
+
+---
+
+## How this fits
+
+This project is one of several studying one question: when a security check passes, what has
+it actually established? The question started from a threshold-signing project,
+[threshold-signing-k8s](https://github.com/raahulkurmi/threshold-signing-k8s). Here the check
+that passes is provenance verification. For this sample, a pass established where the build
+came from, not whether it was authorized.
 
 ---
 
